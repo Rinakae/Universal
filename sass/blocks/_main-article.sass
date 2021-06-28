@@ -1,0 +1,142 @@
+.main-article
+  position: absolute
+  top: 100px
+  right: 0
+  left: 0
+  z-index: 10
+  &-wrapper
+    display: flex
+    border-radius: 10px
+    overflow: hidden
+  &__text
+    width: 80%
+    position: relative
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 55px 0 100px 55px
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+      z-index: 5
+  &__bg-img
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    object-fit: cover
+    z-index: -2
+    width: 100%
+    height: 100%
+.author
+  display: flex
+  align-items: center
+  margin-bottom: 145px
+  z-index: 8
+  &__avatar
+    border-radius: 50%
+    margin-right: 10px
+  &-text
+    display: flex
+    flex-direction: column
+    &__name
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      opacity: 0.85
+    &__prof
+      font-style: normal
+      font-weight: 400
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      opacity: 0.4
+.title-block
+  min-height: 225px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: start
+  z-index: 8
+  &__js
+    font-style: normal
+    font-weight: 900
+    font-size: 12px
+    line-height: 15px
+    color: #4592FF
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    text-decoration: none
+  &__title
+    font-family: "Roboto Slab", serif
+    font-style: normal
+    font-weight: 900
+    font-size: 40px
+    line-height: 50px
+    color: $light
+  &__button
+    min-width: 154px
+    padding: 10px 20px
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    background-color: #4592FF
+    border: none
+    border-radius: 20px
+    color: $light
+    cursor: pointer
+  &__arrow
+    margin-left: 5px
+.recom
+  min-width: 263px
+  background: $light
+  overflow: hidden
+  border: 2px solid red
+  &-title-block
+    padding: 20px 25px
+    border-bottom: 1px solid #D9DADB
+  &-title
+    margin: 0
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: #262D33
+  &__block
+    min-height: 99px
+    padding: 18px 25px
+    border-bottom: 1px solid #D9DADB
+    &:last-child
+      border: none
+  &__link
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    font-style: normal
+    font-weight: 900
+    font-size: 12px
+    line-height: 15px
+    text-decoration: none
+  &__p-link
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    text-decoration: none
+    color: #4B5157
+  &__p
+    margin: 0
+    margin-top: 8px
