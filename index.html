@@ -7,8 +7,10 @@
   <title>Universal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/parallax.min.js"></script>
 </head>
 <body>
 
@@ -61,35 +63,35 @@
             <h2 class="recom-title">Рекомендуем</h2>
           </div>
           <div class="recom__block">
-            <a href="#" class="recom__link">css</a>
+            <a href="#" class="recom__link lightblue">css</a>
             <a href="#" class="recom__p-link"> 
               <p class="recom__p">Как использовать CSS float <br> после того, как вышел Flexbox</p> 
             </a>
           </div> <!-- /.recom__block-->
 
           <div class="recom__block">
-            <a href="#" class="recom__link">Java script</a>
+            <a href="#" class="recom__link greyblue">Java script</a>
             <a href="#" class="recom__p-link">
               <p class="recom__p">На каком стандарте писать <br> скрипты, если я фрилансер</p>
             </a>
           </div> <!-- /.recom__block-->
 
           <div class="recom__block">
-            <a href="#" class="recom__link">html</a>
+            <a href="#" class="recom__link purple">html</a>
             <a href="#" class="recom__p-link">
               <p class="recom__p">Правильно вставляем картинку <br> на сайт для Retina дисплея</p>
             </a>
           </div> <!-- /.recom__block-->
 
           <div class="recom__block">
-            <a href="#" class="recom__link">web design</a>
+            <a href="#" class="recom__link orange">web design</a>
             <a href="#" class="recom__p-link">
               <p class="recom__p">ТОП-10 плагинов для Figma</p>
             </a>
           </div> <!-- /.recom__block-->
 
           <div class="recom__block">
-            <a href="#" class="recom__link">css</a>
+            <a href="#" class="recom__link green">css</a>
             <a href="#" class="recom__p-link">
               <p class="recom__p">Возможности CSS Grid Layout, <br> которые уже можно применять</p>
             </a>
@@ -181,11 +183,7 @@
                 <span class="comments__numbers">342</span>
               </div>            
           </div>
-        </div>
-  
-  
-  
-  
+        </div> 
   
   
   
@@ -226,9 +224,8 @@
   
   
   
-  
-  
         <div class="download">
+          <img src="../img/File.png" alt="File" class="download__file">
           <div class="download-1">
             <a href="#" class="download__link-title">
               <h2 class="download__title">Чек-лист сдачи верстки вашему заказчику</h2>
@@ -237,52 +234,44 @@
           </div>
           <div class="download-2">
             <a href="#" class="download__link">
-              <img src="img/Download.svg" alt="icon: download" class="download__link">
+              <img src="img/Download.svg" alt="icon: download" class="download__link-img">
             </a>
-            <a href="#" class="download__downloads">Скачать</a>
+            <a href="#" class="download__link-text">Скачать</a>
           </div>
         </div>
 
   
-        <div class="advice">
-          <div class="advice-img-wrapper">
-            <img class="advice__img" src="img-3.png" alt="image">
-          </div>
-          <div class="advice-wrapper">
+        <div class="advice">          
+          <img class="advice__img" src="img/notebook.jpg" alt="Notebook">
+          <div class="advice__wrapper-text">
             <a href="#" class="advice__link-title">
-              <h2 class="advice__title">ult dpznm htfkmyst ghjtrns kjz gjhnsjnbj</h2>
+              <h2 class="advice__title">20+ инструментов для js-разработчика</h2>
             </a>
           </div>
-        </div>
+        </div>   
   
   
-  
-  
-  
-  
-        <div class="article-1 article">
+        <div class="article-1 article">          
           <div class="article-wrapper">
             <a href="#" class="article__link-title">
-              <h2 class="article__title">ult dpznm htfkmyst </h2>
+              <h2 class="article__title">Удачные референсы</h2>
             </a>
-            <p class="article__text">Rfr gjcnegbnm, tck d lheujv ujhjlt. Rfr gjcnegbnm, tckb jxtncz gjqnb</p>
+            <p class="article__text">Как выбрать подходящие исходники, если вы ищите идею для интерфейса</p>
           </div>
-          <span class="article__date">25 november</span>
+          <span class="article__date">15 октября</span>
         </div>
+
+
   
         <div class="article-2 article">
           <div class="article-wrapper">
             <a href="#" class="article__link-title">
-              <h2 class="article__title">ult dpznm htfkmyst </h2>
+              <h2 class="article__title">Заказчики — мудаки?</h2>
             </a>
-            <p class="article__text">Rfr gjcnegbnm, heujv ujhjlt. Rfr gjcnegbnm, tckb jxtncz gjqnb</p>
+            <p class="article__text">Как защититься от бесконечных правок на этапе сдачи проекта</p>
           </div>
-          <span class="article__date">25 november</span>
-        </div>
-  
-  
-  
-  
+          <span class="article__date">20 октября</span>
+        </div> 
   
   
   
@@ -304,68 +293,69 @@
             <a href="#" class="tags__link">Sun</a>
             <a href="#" class="tags__link">Wild animals</a>
             <a href="#" class="tags__link">Night</a>
-          </div>
-  
-        </div>
-  
-  
+          </div>  
+        </div>  
   
   
   
         <div class="article-3 article">
           <div class="article-wrapper">
             <a href="#" class="article__link-title">
-              <h2 class="article__title">ult dpznm htfkmyst </h2>
+              <h2 class="article__title">Работа без стресса — это...</h2>
             </a>
-            <p class="article__text">Rfr gjcnegbnm, lbncz d lheujv ujhjlt. Rfr gjcnegbnm, tckb jxtncz gjqnb</p>
+            <p class="article__text">Обустройте свое рабочее место так, чтобы не испытывать раздражение от скрипучего...</p>
           </div>
-          <span class="article__date">25 november</span>
+          <span class="article__date">26 октября</span>
         </div>
   
         <div class="article-4 article">
           <div class="article-wrapper">
             <a href="#" class="article__link-title">
-              <h2 class="article__title">ult dpznm htfkmyst </h2>
+              <h2 class="article__title">Бесплатные методы...</h2>
             </a>
-            <p class="article__text">Rfr gjcnegbnm, ujhjlt. Rfr gjcnegbnm, tckb jxtncz gjqnb</p>
+            <p class="article__text">Как не платить за софт, если у вас есть студенческий билет высшего учебного заведения</p>
           </div>
-          <span class="article__date">25 november</span>
-        </div>
-  
-  
-  
+          <span class="article__date">13 октября</span>
+        </div>  
   
   
   
         <div class="sotial">
-          <h2 class="sotial__title">ult dpznm htfkmyst</h2>
-          <div class="sotial__link-block">
-            <a href="#" class="sotial__link">
-              <img class="sotial__img" src="fb.png" alt="fb">
-            </a>
-            <a href="#" class="sotial__link">
-              <img class="sotial__img" src="tvi.png" alt="fb">
-            </a>
-            <a href="#" class="sotial__link">
-              <img class="sotial__img" src="yt.png" alt="fb">
-            </a>
+          <h2 class="sotial__title">Наши соцсети</h2>
+          <div class="sotial-wrapper">
+            <div class="sotial__link-block-fb">
+              <a href="#" class="sotial__link">
+                <img class="sotial__img" src="img/Facebook.svg" alt="Icon: facebook">
+              </a>
+            </div>
+            <div class="sotial__link-block-tw">
+              <a href="#" class="sotial__link">
+                <img class="sotial__img" src="img/Twitter.svg" alt="Icon: tvitter">
+              </a>
+            </div>
+            <div class="sotial__link-block-yt">
+              <a href="#" class="sotial__link">
+                <img class="sotial__img" src="img/YouTube.svg" alt="Icon: youtube">
+              </a>
+            </div>
           </div>
         </div>
   
   
       </div>
-    </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    </div> 
   
   </section>
+
+
+<section class="investigation parallax-window" data-parallax="scroll" data-speed="0.2"
+  data-image-src="img/coins.jpg">
+  <div class="investigation-wrapper" data-aos="fade-up" data-aos-duration="1000">
+    <h2 class="investigation__title">Расследование недели: сколько <br> зарабатывает веб разработчик в Москве</h2>
+    <a href="#" class="investigation__link">Читать статью <img src="img/Arrow-btn.svg" alt="arrow" class="title-block__arrow"></a>
+  </div>
+</section> <!-- /.newsletter -->
+  
 
 
 
