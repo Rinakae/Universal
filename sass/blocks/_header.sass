@@ -1,7 +1,10 @@
 
 .header
-  background-color: $background-dark
   padding: 15px 0
+  &-dark
+    background-color: $background-dark
+  &-light
+    background-color: $light
   &-wrapper
     display: flex
     justify-content: space-between
@@ -26,10 +29,13 @@
     min-width: 540px
     display: flex
     justify-content: space-between
-  &-link
+  &__link
     text-decoration: none
     font-style: normal
     font-weight: 900
     font-size: 14px
     line-height: 20px
-    color: $light
+    &-dark
+      color: $light
+    &-light
+      color: #939699

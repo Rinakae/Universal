@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+</head>
+
+<body>
+  <header class="header  header-light">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="header__logo-wrapper">
+          <a href="#" class="logo-light">
+            <img src="img/article/Symbol.svg" alt="logo: Universal" class="header__logo-light-round">
+          </a>
+          <a href="#" class="logo-light">
+            <img src="img/article/Universal.svg" alt="logo: Universal" class="header__logo-light">
+          </a>
+        </div>
+        
+        <nav class="navbar-menu">
+          <ul class="navbar-menu__list">
+            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">Статьи</a></li>
+            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">Новости</a></li>
+            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">Горячее</a></li>
+            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">HTML</a></li>
+            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">CSS</a></li>
+            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">JavaScript</a></li>
+            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">Web Design</a></li>
+          </ul>
+        </nav>
+        <button class="header__button">Оставить заявку</button>
+      </div>
+    </div>    
+  </header>
+
+  <div class="hero">
+    
+    <div class="container">
+      <img src="img/article/article-title.jpg" alt="Article image" class="hero__img">
+      <svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero__bookmark">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M3.5 0.5H18.5C20.1569 0.5 21.5 1.84315 21.5 3.5V27.5L11.1424 20L0.5 27.5V3.5C0.5 1.84315 1.84315 0.5 3.5 0.5Z"
+          fill="white" />
+      </svg>
+      <div class="hero-title">
+        <a href="#" class="hero__topic">Новости</a>
+        <div class="hero__navigation">
+          <div class="hero__main">
+            <img src="img/article/Home.svg" alt="Icon: home" class="hero__link-main-img">
+            <a href="#" class="hero__link-main">На главную</a>
+          </div> <!--hero__main-->
+          <div class="hero__switch">
+            <img src="img/article/left-arrow.svg" alt="Icon: left-arrow" class="hero__link-left-img">
+            <a href="#" class="hero__link-switch">Назад</a>
+          </div>          
+          <div class="hero__switch">
+            <a href="#" class="hero__link-switch">Вперед</a>
+            <img src="img/article/right-arrow.svg" alt="Icon: right arrow" class="hero__link-right-img">
+          </div>
+          <!-- /.hero__switch -->
+        </div>
+        <!-- /.hero__navigation -->
+      </div>
+      <!-- /.hero-title -->
+      <div class="hero__wrapper-text">
+        <a href="#" class="hero__link-title">
+          <h2 class="hero__title">
+            Новый налоговый режим для фрилансеров — налог на проф. доход
+          </h2>
+        </a>
+        <p class="hero__text">
+          Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает неофициально. Разобрались, как
+          работает режим и кому он подходит, а кому нет.
+        </p>
+        <div class="hero__block-info">
+          <div class="time">
+            <img src="img/article/Clock.svg" alt="Icon: clock" class="time__img">
+            <span class="time__date">6 августа, 10:30</span>            
+          </div>
+          <div class="like">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="like__img">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.8391 1.96033C11.1701 1.2119 10.2807 0.800049 9.33459 0.800049C8.38831 0.800049 7.59423 1.2119 6.925 1.96033L6.49998 2.63921L6.075 1.96033C5.40597 1.2119 4.61164 0.800049 3.66557 0.800049C2.71953 0.800049 1.82982 1.2119 1.16086 1.96033C-0.220288 3.50554 -0.220288 6.01968 1.16086 7.56429L6.10991 12.3207C6.19083 12.4116 6.29157 12.4672 6.39682 12.4886C6.43211 12.4964 6.46761 12.5 6.50317 12.5C6.64318 12.5 6.78341 12.4403 6.89004 12.3207L11.8391 7.56429C13.2203 6.01968 13.2203 3.50554 11.8391 1.96033Z"
+                fill="#BCBFC2"/>
+            </svg>
+            <span class="like__numbers">830</span>
+          </div>
+          <div class="comment">
+            <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="comment__img">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
+                fill="#BCBFC2" />
+            </svg>
+            <span class="comment__numbers">19</span>
+          </div>
+        </div>
+        <!-- /.hero__block-info -->
+      </div>
+      <!-- /.hero__wrapper-text -->
+    </div>
+    <!-- /.container -->
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+  
+  </html>
