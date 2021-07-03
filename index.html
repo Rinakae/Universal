@@ -14,9 +14,6 @@
   <script src="js/parallax.min.js"></script>
 </head>
 <body>
-
-
-
   <header class="header">
     <div class="container">
       <div class="header-wrapper">
@@ -39,7 +36,6 @@
     </div>
     <div class="header__background"></div>
   </header>
-
 
   <section class="main-article">
     <div class="container">
@@ -68,44 +64,41 @@
           <div class="recom__block">
             <a href="#" class="recom__link lightblue">css</a>
             <a href="#" class="recom__p-link"> 
-              <p class="recom__p">Как использовать CSS float <br> после того, как вышел Flexbox</p> 
+              Как использовать CSS float <br> после того, как вышел Flexbox
             </a>
           </div> <!-- /.recom__block-->
 
           <div class="recom__block">
             <a href="#" class="recom__link greyblue">Java script</a>
             <a href="#" class="recom__p-link">
-              <p class="recom__p">На каком стандарте писать <br> скрипты, если я фрилансер</p>
+              На каком стандарте писать <br> скрипты, если я фрилансер
             </a>
           </div> <!-- /.recom__block-->
 
           <div class="recom__block">
             <a href="#" class="recom__link purple">html</a>
             <a href="#" class="recom__p-link">
-              <p class="recom__p">Правильно вставляем картинку <br> на сайт для Retina дисплея</p>
+              Правильно вставляем картинку <br> на сайт для Retina дисплея
             </a>
           </div> <!-- /.recom__block-->
 
           <div class="recom__block">
             <a href="#" class="recom__link orange">web design</a>
             <a href="#" class="recom__p-link">
-              <p class="recom__p">ТОП-10 плагинов для Figma</p>
+              ТОП-10 плагинов для Figma
             </a>
           </div> <!-- /.recom__block-->
 
           <div class="recom__block">
             <a href="#" class="recom__link green">css</a>
             <a href="#" class="recom__p-link">
-              <p class="recom__p">Возможности CSS Grid Layout, <br> которые уже можно применять</p>
+              Возможности CSS Grid Layout, <br> которые уже можно применять
             </a>
           </div> <!-- /.recom__block-->
         </div>
       </div> <!-- /.main-article-wrapper-->
     </div> <!-- /.container-->
   </section> <!-- /.main-article-->
-
-
-
 
   <div class="panel-article">
     <div class="container">
@@ -169,8 +162,6 @@
           </div>
         </div> 
   
-  
-  
         <div class="popular">
           <img class="popular__img" src="img/lamp.jpg" alt="Lamp">
           <button class="popular__button">Популярное</button>
@@ -205,9 +196,7 @@
             </div>
           </div>
         </div> 
-  
-  
-  
+    
         <div class="download">
           <img src="img/File.png" alt="File" class="download__file">
           <div class="download-1">
@@ -229,7 +218,7 @@
           <img class="advice__img" src="img/notebook.jpg" alt="Notebook">
           <div class="advice__wrapper-text">
             <a href="#" class="advice__link-title">
-              <h2 class="advice__title">20+ инструментов для js-разработчика</h2>
+              <h2 class="advice__title">20+ инструментов <br> для js-разработчика</h2>
             </a>
           </div>
         </div>   
@@ -245,8 +234,6 @@
           <span class="article__date">15 октября</span>
         </div>
 
-
-  
         <div class="article-2 article">
           <div class="article-wrapper">
             <a href="#" class="article__link-title">
@@ -256,8 +243,6 @@
           </div>
           <span class="article__date">20 октября</span>
         </div> 
-  
-  
   
         <div class="tags">
           <div class="tags-1">
@@ -280,8 +265,6 @@
           </div>  
         </div>  
   
-  
-  
         <div class="article-3 article">
           <div class="article-wrapper">
             <a href="#" class="article__link-title">
@@ -301,9 +284,7 @@
           </div>
           <span class="article__date">13 октября</span>
         </div>  
-  
-  
-  
+    
         <div class="sotial">
           <h2 class="sotial__title">Наши соцсети</h2>
           <div class="sotial-wrapper">
@@ -324,11 +305,8 @@
             </div>
           </div>
         </div>
-  
-  
-      </div>
+        </div>
     </div> 
-  
   </section>
 
 
@@ -336,12 +314,9 @@
   data-image-src="img/coins.jpg">
   <div class="investigation-wrapper" data-aos="fade-up" data-aos-duration="1000">
     <h2 class="investigation__title">Расследование недели: сколько <br> зарабатывает веб разработчик в Москве</h2>
-    <a href="#" class="investigation__link">Читать статью <img src="img/Arrow-btn.svg" alt="arrow" class="investigation__arrow"></a>
+    <button class="investigation__button">Читать статью <img src="img/Arrow-btn.svg" alt="arrow" class="investigation__arrow"></button>
   </div>
 </section> <!-- /.investigation -->
-
-
-
 
 
 <section class="news">
@@ -614,13 +589,6 @@
     </div> <!-- /.news-wrapper -->
 
 
-
-
-
-
-
-
-
     <div class="recently">
       <div class="recently-top">
         <h2 class="recently__title-top">Недавно опубликовано</h2>        
@@ -796,41 +764,50 @@
   </div>
 
 </section>
-  
-
-
-
 
 
 <footer class="footer">
   <div class="container">
+
+    <div class="subscribe">
+      <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
+      <form action="send.php" method="POST" class="subscribe__form">
+        <div class="subscribe__wrapper">
+          <input type="email" class="subscribe__input" placeholder="Email" name="email" required>
+        </div>
+        <div class="subscribe__wrapper-button">
+          <button class="subscribe__button">Подписаться</button>
+        </div>
+      </form>
+    </div> <!-- subscribe-->
+
   <div class="footer__links">
     <div class="footer__list-wrapper footer__red">
       <h3 class="footer__title">Новости</h3>
       <ul class="footer__list">
-        <li class="footer__item"><a href="" class="footer__link-item">Обновления</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Экспресс</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Politics</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Solar Eclipse</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Обновления</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Экспресс</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Politics</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Solar Eclipse</a></li>
       </ul>
     </div>
     
     <div class="footer__list-wrapper footer__purple">
       <h3 class="footer__title">Статьи</h3>
       <ul class="footer__list">
-        <li class="footer__item"><a href="" class="footer__link-item">HTML</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">CSS</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">JavaScript</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">JWeb Design</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">HTML</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">CSS</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">JavaScript</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">JWeb Design</a></li>
       </ul>
     </div>
     
     <div class="footer__list-wrapper footer__blue">
       <h3 class="footer__title">Видеоуроки</h3>
       <ul class="list">
-        <li class="footer__item"><a href="" class="footer__link-item">Скринкасты</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Уроки</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Вебинары</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Скринкасты</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Уроки</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Вебинары</a></li>
       </ul>
     </div>
     
@@ -838,37 +815,82 @@
     <div class="footer__list-wrapper footer__orange">
       <h3 class="footer__title">Курсы</h3>
       <ul class="footer__list">
-        <li class="footer__item"><a href="" class="footer__link-item">Платные интенсивы</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Бесплатные стримы</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Мастер-классы</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Менторство</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Буткемпы</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Платные интенсивы</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Бесплатные стримы</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Мастер-классы</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Менторство</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Буткемпы</a></li>
       </ul>
     </div>
     
     <div class="footer__list-wrapper footer__green">
       <h3 class="footer__title">Информация</h3>
       <ul class="footer__list">
-        <li class="footer__item"><a href="" class="footer__link-item">Политика данных</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Оферта сайта</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Реквизиты</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Контакты</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Политика данных</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Оферта сайта</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Реквизиты</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Контакты</a></li>
       </ul>
     </div>
     
     <div class="footer__list-wrapper footer__greyblue">
       <h3 class="footer__title">Категории</h3>
       <ul class="footer__list">
-        <li class="footer__item"><a href="" class="footer__link-item">Популярное</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Горячее</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Подборки</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Мнения</a></li>
-        <li class="footer__item"><a href="" class="footer__link-item">Карьера</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Популярное</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Горячее</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Подборки</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Мнения</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item">Карьера</a></li>
       </ul>
     </div>
     
+    </div> <!-- footer__links-->
+
+    <div class="contacts">
+      <div class="contacts__wrapper-lincs">
+        <a href="#" class="contacts__logo-link"> <img src="img/footer/footer-logo.svg" alt="Logo: UNV" class="contacts__logo"></a>
+        <a href="#" class="contacts__link">Контакты</a>
+        <a href="#" class="contacts__link">Работа у нас</a>
+        <a href="#" class="contacts__link">Реклама</a>
+        <a href="#" class="contacts__link">Обратная связь</a>
+      </div>
+      <!-- /.contacts__wrapper-lincs -->
+      <div class="contacts__wrapper-icons">
+        <div class="contacts__fb">
+          <a href="#" class="contacts__fb-link">
+            <img class="contacts__fb-img" src="img/Facebook.svg" alt="Icon: facebook">
+          </a>
+        </div>
+        <div class="contacts__tw">
+          <a href="#" class="contacts__tw-link">
+            <img class="contacts__tw-img" src="img/Twitter.svg" alt="Icon: tvitter">
+          </a>
+        </div>
+        <div class="contacts__yt">
+          <a href="#" class="contacts__yt-link">
+            <img class="contacts__yt-img" src="img/YouTube.svg" alt="Icon: youtube">
+          </a>
+        </div>
+        <div class="contacts__inst">
+          <a href="#" class="contacts__inst-link">
+            <img class="contacts__inst-img" src="img/footer/Instagram.svg" alt="Icon: instagram">
+          </a>
+        </div>
+      </div>
+      <!-- /.contacts__wrapper-icons -->
     </div>
-  </div>  
+    <!-- /.contacts -->
+
+    <div class="copyright">
+      <p class="copyright__text">
+        Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи, новости, видеоуроки,
+        подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании, указывайте ссылку.
+      </p>
+      <span class="copyright__year">© 2020 Universal Magazine</span>
+    </div>
+    <!-- /.copyright -->
+
+  </div> <!-- container-->
 </footer>
 
 

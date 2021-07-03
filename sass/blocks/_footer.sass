@@ -6,16 +6,20 @@
     align-items: flex-start
     align-content: center
     justify-content: space-between
-
+    padding-bottom: 64px
+    border-bottom: 1px solid #D9DADB
   &__list
     &-wrapper
       display: flex
       flex-direction: column
       justify-content: space-between
       padding-top: 30px
-      width: 100%
+      width: 195px
+      &:last-child
+        width: 165px
   &__title
     margin: 0
+    margin-bottom: 25px
     font-style: normal
     font-weight: 900
     font-size: 14px
@@ -30,6 +34,8 @@
       color: #4B5157
   &__item
     margin-bottom: 15px
+    &:last-child
+      margin-bottom: 0
   &__red
     border-top: 5px solid #FF4F52
   &__purple
@@ -42,3 +48,95 @@
     border-top: 5px solid #3DC47E
   &__greyblue
     border-top: 5px solid #6E99AE
+.subscribe
+  text-align: center
+  padding-bottom: 70px
+  &__title
+    margin: 0
+    margin-bottom: 25px
+    font-family: "Roboto Slab", sans
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+  &__form
+    margin: auto
+    max-width: 459px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__input
+    width: 313px
+    height: 40px
+    padding: 10px 15px
+    border: 1px solid #D9DADB
+    border-radius: 5px
+  &__button
+    padding: 10px 25px
+    background: #4592FF
+    border: none
+    border-radius: 20px
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $light
+    cursor: pointer
+.contacts
+  display: flex
+  align-items: center
+  justify-content: space-between
+  border-bottom: 1px solid #D9DADB
+  padding: 30px 0
+  &__wrapper
+    &-icons
+      width: 205px
+      display: flex
+      justify-content: space-between
+    &-lincs
+      display: flex
+      align-items: center
+  &__logo
+    &-link
+      margin-right: 30px
+  &__link
+    margin-right: 30px
+    text-transform: uppercase
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: #262D33
+  &__fb, &__tw, &__yt, &__inst
+    width: 40px
+    height: 40px
+    padding: 10px
+    text-align: center
+    border-radius: 50%
+  &__fb
+    background-color: #4267B2
+  &__tw
+    background-color: #1DA1F2
+  &__yt
+    background-color: #FF0000
+  &__inst
+    background-color: #262626
+.copyright
+  padding-top: 40px
+  display: flex
+  align-items: start
+  justify-content: space-between
+  &__text
+    margin: 0
+    flex-basis: 66%
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 20px
+    color: #939699
+  &__year
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 20px
+    color: #939699

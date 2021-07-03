@@ -63,7 +63,7 @@
       color: $light
       opacity: 0.4
 .title-block
-  min-height: 225px
+  /*min-height: 225px*/
   display: flex
   flex-direction: column
   justify-content: space-between
@@ -79,6 +79,8 @@
     text-transform: uppercase
     text-decoration: none
   &__title
+    margin-top: 20px
+    margin-bottom: 50px
     font-family: "Roboto Slab", serif
     font-style: normal
     font-weight: 900
@@ -118,10 +120,13 @@
   &__block
     min-height: 99px
     padding: 18px 25px
+    display: flex
+    flex-direction: column
     border-bottom: 1px solid #D9DADB
     &:last-child
       border: none
   &__link
+    margin-bottom: 8px
     letter-spacing: 0.5px
     text-transform: uppercase
     font-style: normal
@@ -146,6 +151,3 @@
     line-height: 20px
     text-decoration: none
     color: #4B5157
-  &__p
-    margin: 0
-    margin-top: 8px
