@@ -1,0 +1,217 @@
+.full-article
+  padding: 60px 0
+  background-color: $light
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    position: relative
+  &__block
+    &-text
+      width: 66%
+  &__letter
+    float: left
+    margin-top: 10px
+    margin-right: 10px
+  &__text
+    margin-top: 15px
+    margin-bottom: 30px
+    padding-right: 30px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 30px
+    color: #4B5157
+    &:nth-child(2)
+      margin-top: 0
+      margin-bottom: 0
+    &:nth-child(3)
+      margin-top: 0
+  &__block
+    &-author
+      width: 264px
+      position: absolute
+      top: -160px
+      right: 0
+      &-wrapper
+        border-radius: 10px
+        overflow: hidden
+        background-color: $light
+        border: 1px solid #D9DADB
+  &__tags
+    padding: 15px 0 60px 0
+    border-bottom: 1px solid #D9DADB
+  &__main
+    &-p
+      position: relative
+      padding-right: 30px
+      margin-top: 50px
+      margin-bottom: 30px
+      z-index: 8
+      &::before
+        content: ''
+        position: absolute
+        top: -20px
+        left: -20px
+        width: 70px
+        height: 70px
+        background-image: url(../img/article/Quote.svg)
+        background-repeat: no-repeat
+        z-index: -2
+    &-text
+      font-family: "Roboto Slab", sans
+      font-style: normal
+      font-weight: 700
+      font-size: 25px
+      line-height: 30px
+      color: #262D33
+  &__bottom
+    text-align: center
+    padding: 15px 0
+    border-top: 1px solid #D9DADB
+    &-link
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: #262D33
+.tags
+  &__link
+    display: inline-block
+.block-author
+  display: flex
+  flex-direction: column
+  padding: 35px 0 20px 0
+  align-items: center
+  &__img
+    width: 90px
+    height: 90px
+    border-radius: 50%
+    object-fit: cover
+    margin-bottom: 15px
+  &__name
+    font-family: "Roboto Slab", sans
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: #262D33
+  &__pro
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+    margin-bottom: 15px
+  &__number
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: #262D33
+.slider
+  border: 1px solid black
+  height: 400px
+.material
+  position: absolute
+  top: 150px
+  right: 0
+  &-wrapper
+    width: 263px
+  &__title
+    margin-top: 0
+    margin-bottom: 20px
+  &__img
+    border-radius: 10px
+    object-fit: cover
+    width: 100%
+    margin-bottom: 15px
+  &__title
+    &-article
+      margin-top: 0
+      margin-bottom: 10px
+      font-family: "Roboto Slab", sans
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+  &__link
+    &-title
+      &-article
+        color: #262D33
+  &__text
+    margin: 0
+    margin-bottom: 20px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+  &__info
+    display: flex
+    align-items: center
+  &__comment
+    display: flex
+    align-items: center
+    &-img
+      margin-right: 5px
+  &__numbers
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+.viewers
+  display: flex
+  align-items: center
+  margin-right: 10px
+  &__img
+    margin-right: 5px
+  &__numbers
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+.repost
+  padding: 20px 0 30px 0
+  &__title
+    margin: 0
+    margin-bottom: 25px
+    font-family: "Roboto Slab", sans
+    font-style: normal
+    font-weight: 700
+    font-size: 25px
+    line-height: 30px
+    color: #262D33
+  &__wrapper
+    &-link
+      display: flex
+  &__button
+    display: flex
+    align-items: center
+    margin-right: 14px
+    border: none
+    padding: 10px 20px
+    background: #4592FF
+    border-radius: 20px
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $light
+    cursor: pointer
+  &__img
+    width: 20px
+    height: 20px
+    margin-right: 8px
+  &__number
+    margin-left: 8px
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 20px
+    &-like
+      color: #FFC4C9
+    &-fb
+      color: #BBC6FF
+    &-tw
+      color: #C5E4FC
