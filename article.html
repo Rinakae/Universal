@@ -72,7 +72,9 @@
       <!-- /.hero-title -->
       <div class="hero__wrapper-text">
         <svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero__bookmark">
-          <path fill-rule="evenodd" clip-rule="evenodd"
+          <path 
+          class="hero__bookmark"
+          fill-rule="evenodd" clip-rule="evenodd"
             d="M3.5 0.5H18.5C20.1569 0.5 21.5 1.84315 21.5 3.5V27.5L11.1424 20L0.5 27.5V3.5C0.5 1.84315 1.84315 0.5 3.5 0.5Z"
             fill="white" />
         </svg>
@@ -161,23 +163,6 @@
       </div> <!--full-article__block-author-->
     </div> <!--full-article__wrapper container-hero-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section class="slider">
       <div class="slider-wrapper">
         <div class="container">
@@ -228,32 +213,6 @@
       </div>
     </section>
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="full-article__wrapper container-hero">
       <div class="full-article__block-text">
         <p class="full-article__text">
@@ -354,12 +313,6 @@
     </div> <!--full-article__wrapper container-hero-->
   </div> <!--container-->
 </section> <!--full-article-->
-
-
-
-
-
-
 
 <div class="more-article">
   <div class="container">
@@ -856,7 +809,7 @@
         <h2 class="add-comment__title">Что вы думаете на этот счет?</h2>
         <form class="add-comment__form" action="send.php" method="POST">
           <div class="add-comment__textarea-wrapper">
-            <textarea class="add-comment__textarea" maxlength="450" required></textarea>
+            <textarea class="add-comment__textarea" minlength="100" required></textarea>
           </div>
           <button class="add-comment__button">
             Отправить
