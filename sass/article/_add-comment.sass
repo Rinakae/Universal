@@ -1,0 +1,84 @@
+.add-comment
+  background-color: $light
+  padding: 30px 0
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    max-width: 750px
+    margin-right: 196px
+    border-radius: 10px
+    padding: 30px 40px 35px 30px
+    background: #F5F5F5
+  &__author
+    &-img
+      height: 75px
+      width: 75px
+      border-radius: 50%
+      object-fit: cover
+      margin-top: 40px
+      margin-right: 20px
+  &__title
+    margin-top: 0
+    margin-bottom: 15px
+    font-family: "Roboto Slab", sans
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: #262D33
+  &__textarea
+    &-wrapper
+      position: relative
+      width: 100%
+      height: 130px
+      border: 1px solid #D9DADB
+      border-radius: 10px
+      margin-bottom: 15px
+      &:before
+        content: ' '
+        position: absolute
+        width: 0
+        height: 0
+        left: -21px
+        top: 25px
+        border: 10px solid #D9DADB
+        border-color: transparent #D9DADB transparent transparent
+      &:after
+        content: ' '
+        position: absolute
+        width: 0
+        height: 0
+        left: -20px
+        top: 25px
+        border: 10px solid #D9DADB
+        border-color: transparent white transparent transparent
+
+  &__textarea
+    width: 100%
+    height: 100%
+    border-color: transparent
+    border-radius: 10px
+    resize: none
+  &__wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    flex-grow: 1
+  &__form
+    margin-bottom: 0
+    max-width: 563px
+  &__button
+    display: flex
+    align-items: center
+    padding: 10px 20px
+    border-radius: 20px
+    background-color: #4592FF
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $light
+    cursor: pointer
+    border: none
+  &__arrow
+    margin-left: 5px
