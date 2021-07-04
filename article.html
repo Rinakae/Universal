@@ -33,7 +33,7 @@
           <ul class="navbar-menu__list">
             <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">Статьи</a></li>
             <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">Новости</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">Горячее</a></li>
+            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">Курсы</a></li>
             <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">HTML</a></li>
             <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">CSS</a></li>
             <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">JavaScript</a></li>
@@ -121,11 +121,11 @@
     <div class="full-article__wrapper container-hero">
       <div class="full-article__block-text">
         <img class="full-article__letter" src="img/article/M.svg" alt="letter M">
-        <p class="full-article__text">
+        <p class="full-article__text align-1">
           Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших
           направлений развития.
         </p>
-        <p class="full-article__text">
+        <p class="full-article__text align-2">
           Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших
           направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское
           обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
@@ -138,8 +138,7 @@
         </p>
         <p class="full-article__text">
           Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших
-          направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское
-          обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации
+          направлений развития. Значимость этих проблем настолько очевидна, 
         </p>
         <p class="full-article__text">
           Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших
@@ -179,52 +178,56 @@
 
 
 
-
-    <div class="slider">
-      <div class="container">
-        <!-- Slider main container -->
-        <div class="swiper-container  article-slider  article__slider">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide article-slider__item">
-              <img src="img/article/landscape.jpg" alt="slide" class="article-slider__img">
+    <section class="slider">
+      <div class="slider-wrapper">
+        <div class="container">
+          <!-- Slider main container -->
+          <div class="swiper-container  article-slider  article__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide article-slider__item">
+                <img src="img/article/landscape.jpg" alt="slide" class="article-slider__img">
+              </div>
+              <div class="swiper-slide article-slider__item">
+                <img src="img/article/land.jpg" alt="slide" class="article-slider__img">
+              </div>
+              <div class="swiper-slide article-slider__item">
+                <img src="img/article/land-3.jpg" alt="slide" class="article-slider__img">
+              </div>
             </div>
-            <div class="swiper-slide article-slider__item">
-              <img src="img/article/land.jpg" alt="slide" class="article-slider__img">
+      
+            <!-- If we need navigation buttons -->
+            <button class="article-slider__button article-slider__button--prev">
+              <img src="img/article/arrow-prev.svg" alt="Icon: arrow prev" class="article-slider__button--prev">
+            </button>
+            <button class="article-slider__button article-slider__button--next">
+              <img src="img/article/arrow-next.svg" alt="Icon: arrow next" class="article-slider__button--next">
+            </button>
+          </div>
+          <!--/.swiper-container-->
+          <div class="slider__author">
+            <div class="slider__author-text">
+              <p class="slider__text">Geostatistics deal with quantitative data analysis, specifically the application of
+                statistical methodology</p>
             </div>
-            <div class="swiper-slide article-slider__item">
-              <img src="img/article/land-3.jpg" alt="slide" class="article-slider__img">
+            <div class="slider__wrapper-author">
+              <div class="slider__author-avatar">
+                <img src="img/article/Avatar-3.png" alt="Avatar author" class="slider__avatar">
+              </div>
+              <div class="slider__wrapper-text">
+                <a href="#" class="slider__name">Андрей Вашигаев</a>
+                <span class="slider__pro">Фотограф</span>
+              </div>
+              <!-- /.slider__author-text -->
             </div>
+            <!-- /.slider__wrapper-author -->
           </div>
-        
-          <!-- If we need navigation buttons -->
-          <button class="article-slider__button article-slider__button--prev">
-            <img src="img/article/arrow-prev.svg" alt="Icon: arrow prev" class="article-slider__button--prev">
-          </button>
-          <button class="article-slider__button article-slider__button--next">
-            <img src="img/article/arrow-next.svg" alt="Icon: arrow next" class="article-slider__button--next">
-          </button>
         </div>
-        <!--/.swiper-container-->
-      </div>   
-      <div class="slider__author">
-        <div class="slider__author-text">
-          <p class="slider__text">Geostatistics deal with quantitative data analysis, specifically the application of statistical methodology</p>
-        </div>
-        <div class="slider__wrapper-author">
-          <div class="slider__author-avatar">
-            <img src="img/article/Avatar-3.png" alt="Avatar author" class="slider__avatar">
-          </div>
-          <div class="slider__wrapper-text">
-            <a href="#" class="slider__name">Андрей Вашигаев</a>
-            <span class="slider__pro">Фотограф</span>
-          </div>
-          <!-- /.slider__author-text -->
-        </div>
-        <!-- /.slider__wrapper-author -->        
-      </div>   
-    </div>
+      
+      </div>
+    </section>
+    
 
 
 
@@ -557,7 +560,7 @@
                   <span class="item-comment__author-date">17 июля, 18:53</span>
                 </div>
                 <!-- /.item-comment__author-wrapper -->
-                <p class="item-comment__text">Если честно, кажется, что этот налоговый режим ввели, чтобы собрать больше денег с народа. Я, конечно, понимаю, что
+                <p class="item-comment__text item-comment__text-grow">Если честно, кажется, что этот налоговый режим ввели, чтобы собрать больше денег с народа. Я, конечно, понимаю, что
                 бюджеты надо пополнять, но не лучше ли обложить налогом богатых?</p>
                 <div class="item-comment__reaction">
                   <a href="#" class="item-comment__link-answer">

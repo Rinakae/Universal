@@ -13,7 +13,6 @@
     padding-bottom: 30px
   &__title
     margin: 0
-    margin-right: 10px
     font-family: "Roboto Slab", sans
     font-style: normal
     font-weight: 700
@@ -21,8 +20,9 @@
     line-height: 50px
     color: #262D33
     &-num
+      font-family: "Lato", sans-serif
       font-style: normal
-      font-weight: normal
+      font-weight: 400
       font-size: 40px
       line-height: 50px
       color: #939699
@@ -59,6 +59,7 @@
     cursor: pointer
     &-img
       margin-right: 7px
+      margin-left: 25px
 .item-comment
   &:nth-child(n+4):nth-child(-n+6)
     display: none
@@ -69,7 +70,7 @@
     &:first-child
       border-top: 1px solid #D9DADB
     &-answer
-      padding-left: 60px
+      padding-left: 92px
   &__ava
     width: 75px
     height: 75px
@@ -97,13 +98,15 @@
       color: #939699
   &__text
     margin: 0
-    margin-bottom: 15px
+    margin-bottom: 12px
     max-width: 570px
     font-style: normal
     font-weight: normal
     font-size: 18px
     line-height: 30px
     color: #4B5157
+    &-grow
+      margin-bottom: 40px
   &__link
     &-answer
       display: flex
