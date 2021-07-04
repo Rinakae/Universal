@@ -6,13 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Universal</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="js/parallax.min.js"></script>
+  <script src="js/parallax.min.js"></script>  
 </head>
 
 <body>
@@ -161,7 +162,94 @@
       </div> <!--full-article__block-author-->
     </div> <!--full-article__wrapper container-hero-->
 
-    <div class="slider"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="slider">
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper-container  article-slider  article__slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide article-slider__item">
+              <img src="img/article/landscape.jpg" alt="slide" class="article-slider__img">
+            </div>
+            <div class="swiper-slide article-slider__item">
+              <img src="img/article/land.jpg" alt="slide" class="article-slider__img">
+            </div>
+            <div class="swiper-slide article-slider__item">
+              <img src="img/article/land-3.jpg" alt="slide" class="article-slider__img">
+            </div>
+          </div>
+        
+          <!-- If we need navigation buttons -->
+          <button class="article-slider__button article-slider__button--prev">
+            <img src="img/article/arrow-prev.svg" alt="Icon: arrow prev" class="article-slider__button--prev">
+          </button>
+          <button class="article-slider__button article-slider__button--next">
+            <img src="img/article/arrow-next.svg" alt="Icon: arrow next" class="article-slider__button--next">
+          </button>
+        </div>
+        <!--/.swiper-container-->
+      </div>   
+      <div class="slider__author">
+        <div class="slider__author-text">
+          <p class="slider__text">Geostatistics deal with quantitative data analysis, specifically the application of statistical methodology</p>
+        </div>
+        <div class="slider__wrapper-author">
+          <div class="slider__author-avatar">
+            <img src="img/article/Avatar-3.png" alt="Avatar author" class="slider__avatar">
+          </div>
+          <div class="slider__wrapper-text">
+            <a href="#" class="slider__name">Андрей Вашигаев</a>
+            <span class="slider__pro">Фотограф</span>
+          </div>
+          <!-- /.slider__author-text -->
+        </div>
+        <!-- /.slider__wrapper-author -->        
+      </div>   
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="full-article__wrapper container-hero">
       <div class="full-article__block-text">
@@ -355,10 +443,10 @@
     <div class="comments-wrapper">
       <div class="comments__header">
         <h3 class="comments__title">Комментарии <span class="comments__title-num">19</span></h3>
-        <button class="comments__button-add">
+        <a href="#add-comment" class="comments__link-add">
           <img class="comments__pen-img" src="img/article/Pencil.svg" alt="Icon: pencil">
           Добавить комментарий
-        </button>
+        </a>
       </div>
       <!-- /.comments__header -->
       
@@ -757,7 +845,7 @@
 
 <!-- subscribe-->
 
-<div class="add-comment">
+<div class="add-comment" id="add-comment">
   <div class="container container-hero">
     <div class="add-comment-wrapper">
       <img src="img/article/avatar-6.png" class="add-comment__author-img">
@@ -906,6 +994,7 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/articleSlider.js"></script>
     <script src="js/main.js"></script>
   </body>  
 </html>
