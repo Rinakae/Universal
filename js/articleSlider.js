@@ -5,8 +5,8 @@ $(document).ready(function () {
 
   // Navigation arrows
   navigation: {
-    prevEl: '.article-slider__button--prev',
-    nextEl: '.article-slider__button--next',
+    prevEl: '.article-slider__button-prev',
+    nextEl: '.article-slider__button-next',
   },
 
   keyboard: {

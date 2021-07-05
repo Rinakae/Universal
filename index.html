@@ -15,7 +15,7 @@
   <script src="js/parallax.min.js"></script>  
 </head>
 <body>
-  <header class="header header-dark">
+  <header class="header header-dark" id="header">
     <div class="container">
       <div class="header-wrapper">
         <a href="#" class="logo">
@@ -23,13 +23,13 @@
         </a>
         <nav class="navbar-menu">
           <ul class="navbar-menu__list">
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-dark">Статьи</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-dark">Новости</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-dark">Горячее</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-dark">HTML</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-dark">CSS</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-dark">JavaScript</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-dark">Web Design</a></li>
+            <li class="navbar-menu__item"><a href="#topic" class="navbar-menu__link navbar-menu__link-dark">Статьи</a></li>
+            <li class="navbar-menu__item"><a href="#news" class="navbar-menu__link navbar-menu__link-dark">Новости</a></li>
+            <li class="navbar-menu__item"><a href="#hot" class="navbar-menu__link navbar-menu__link-dark">Горячее</a></li>
+            <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link navbar-menu__link-dark">HTML</a></li>
+            <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link navbar-menu__link-dark">CSS</a></li>
+            <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link navbar-menu__link-dark">JavaScript</a></li>
+            <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link navbar-menu__link-dark">Web Design</a></li>
           </ul>          
         </nav>
         <button class="header__button">Оставить заявку</button>
@@ -54,7 +54,8 @@
           <div class="title-block">
             <a href="#" class="title-block__js">Java Script</a>
             <h1 class="title-block__title">Расширение Chrome <br> защищает от атак</h1>
-            <button class="title-block__button">Читать далее<img src="img/Arrow-btn.svg" alt="arrow" class="title-block__arrow"></button>
+            <a href="article.html" class="article-page"><button class="title-block__button blue-button">Читать далее<img src="img/Arrow-btn.svg" alt="arrow"
+                class="title-block__arrow"></button></a>
           </div>
         </div> <!-- /.main-article__text-->     
         
@@ -128,7 +129,7 @@
     </div> <!-- /.container-->
   </div> <!-- /.panel-article-->
 
-  <section class="topic">
+  <section class="topic" id="topic">
     <div class="container">
       <div class="topic-grid">
   
@@ -214,7 +215,7 @@
             <a href="#" class="download__link">
               <img src="img/Download.svg" alt="icon: download" class="download__link-img">
             </a>
-            <a href="#" class="download__link-text">Скачать</a>
+            <a href="README.md" class="download__link-text" download >Скачать</a>
           </div>
         </div>
 
@@ -293,17 +294,17 @@
         <div class="sotial">
           <h2 class="sotial__title">Наши соцсети</h2>
           <div class="sotial-wrapper">
-            <div class="sotial__link-block-fb">
+            <div class="sotial__link-block-fb blue-button">
               <a href="#" class="sotial__link">
                 <img class="sotial__img" src="img/Facebook.svg" alt="Icon: facebook">
               </a>
             </div>
-            <div class="sotial__link-block-tw">
+            <div class="sotial__link-block-tw blue-button">
               <a href="#" class="sotial__link">
                 <img class="sotial__img" src="img/Twitter.svg" alt="Icon: tvitter">
               </a>
             </div>
-            <div class="sotial__link-block-yt">
+            <div class="sotial__link-block-yt blue-button">
               <a href="#" class="sotial__link">
                 <img class="sotial__img" src="img/YouTube.svg" alt="Icon: youtube">
               </a>
@@ -319,12 +320,13 @@
   data-image-src="img/coins.jpg">
   <div class="investigation-wrapper" data-aos="fade-up" data-aos-duration="1000">
     <h2 class="investigation__title">Расследование недели: сколько <br> зарабатывает веб разработчик в Москве</h2>
-    <button class="investigation__button">Читать статью <img src="img/Arrow-btn.svg" alt="arrow" class="investigation__arrow"></button>
+    <a href="article.html" class="article-page"><button class="investigation__button blue-button">Читать статью <img src="img/Arrow-btn.svg" alt="arrow"
+        class="investigation__arrow"></button></a>
   </div>
 </section> <!-- /.investigation -->
 
 
-<section class="news">
+<section class="news" id="news">
   <div class="container container-wrapper">
     <div class="news-wrapper">
       <div class="news-block">        
@@ -712,33 +714,175 @@
 
 
 
-<section class="hot">
+<section class="hot" id="hot">
   <div class="container">
     <div class="hot-grid">
-      <div class="hot-slider">
-        <div class="hot__block-title">
-          <div class="hot__label">Горячее</div>
-          <div class="hot__author">
-            <a href="#" class="hot__link-ava">
-              <img class="hot__ava" src="img/hot/avatar-slider.png" alt="ava image">
-            </a>
-            <a href="#" class="hot__link-name">
-              <span class="hot__name">Оксана Пушкина</span>
-            </a>
-            <span class="hot__prof">Фотограф</span>
+
+
+
+      <div class="swiper-container hot-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide hot-slider__item">
+            <img src="img/hot/slider-1.jpg" alt="Slide" class="hot-slider__img">
+            <div class="hot-slider__block">
+              <div class="hot__block-title">
+                <div class="hot__label">Горячее</div>
+                <div class="hot__author">
+                  <a href="#" class="hot__link-ava">
+                    <img class="hot__ava" src="img/hot/avatar-slider.png" alt="ava image">
+                  </a>
+                  <a href="#" class="hot__link-name">
+                    <span class="hot__name">Оксана Пушкина</span>
+                  </a>
+                  <span class="hot__prof">Фотограф</span>
+                </div>
+                <!--hot-author-->
+                <a href="#" class="hot__link-title">
+                  <h1 class="hot__title">Выбор читателей: где удобнее работать фрилансеру</h1>
+                </a>
+                <a href="article.html" class="article-page">
+                  <button class="hot__button blue-button">
+                    <img class="hot__button-img" src="img/hot/Images.svg" alt="Icon: image">
+                    Смотреть фото
+                    <span class="hot__button-number">26</span>
+                  </button>
+                </a>
+              </div> <!--hot__block-title-->
+              <!--hot__block-title-->
+            </div>
+            <!--hot-slider-->
+          </div> <!--slide 1-->
+          <div class="swiper-slide">
+            <img src="img/hot/slider-2.jpg" alt="Slide" class="hot-slider__img">
+            <div class="hot-slider__block">
+              <div class="hot__block-title">
+                <div class="hot__label">Горячее</div>
+                <div class="hot__author">
+                  <a href="#" class="hot__link-ava">
+                    <img class="hot__ava" src="img/article/avatar-4.png" alt="ava image">
+                  </a>
+                  <a href="#" class="hot__link-name">
+                    <span class="hot__name">Светлана Строкина</span>
+                  </a>
+                  <span class="hot__prof">Фотограф</span>
+                </div>
+                <!--hot-author-->
+                <a href="#" class="hot__link-title">
+                  <h1 class="hot__title">Где взять реальные проекты для <br>портфолио</h1>
+                </a>
+                <a href="article.html" class="article-page">
+                  <button class="hot__button blue-button">
+                    <img class="hot__button-img" src="img/hot/Images.svg" alt="Icon: image">
+                    Смотреть фото
+                    <span class="hot__button-number">26</span>
+                  </button>
+                </a>
+              </div>
+              <!--hot__block-title--> 
+              <!--hot__block-title-->
+            </div>
+            <!--hot-slider-->
+          </div> <!--slide-2-->
+          <div class="swiper-slide">
+            <img src="img/hot/slider-3.jpeg" alt="Slide" class="hot-slider__img">
+            <div class="hot-slider__block">
+              <div class="hot__block-title">
+                <div class="hot__label">Горячее</div>
+                <div class="hot__author">
+                  <a href="#" class="hot__link-ava">
+                    <img class="hot__ava" src="img/article/avatar-5.png" alt="ava image">
+                  </a>
+                  <a href="#" class="hot__link-name">
+                    <span class="hot__name">Олег Иванов</span>
+                  </a>
+                  <span class="hot__prof">Фрилансер</span>
+                </div>
+                <!--hot-author-->
+                <a href="#" class="hot__link-title">
+                  <h1 class="hot__title">Список стран, куда можно улететь</h1>
+                </a>
+                <a href="article.html" class="article-page">
+                  <button class="hot__button blue-button">
+                    <img class="hot__button-img" src="img/hot/Images.svg" alt="Icon: image">
+                    Смотреть фото
+                    <span class="hot__button-number">26</span>
+                  </button>
+                </a>
+              </div>
+              <!--hot__block-title-->              
+            </div>
+            <!--hot-slider-->
+          </div> <!--slide-3-->
+          <div class="swiper-slide">
+            <img src="img/hot/slider-4.jpg" alt="Slide" class="hot-slider__img">
+            <div class="hot-slider__block">
+              <div class="hot__block-title">
+                <div class="hot__label">Горячее</div>
+                <div class="hot__author">
+                  <a href="#" class="hot__link-ava">
+                    <img class="hot__ava" src="img/article/avatar-6.png" alt="ava image">
+                  </a>
+                  <a href="#" class="hot__link-name">
+                    <span class="hot__name">Мария Филатова</span>
+                  </a>
+                  <span class="hot__prof">Фрилансер</span>
+                </div>
+                <!--hot-author-->
+                <a href="#" class="hot__link-title">
+                  <h1 class="hot__title">Техника работы по помидоркам — это как?</h1>
+                </a>
+                <a href="article.html" class="article-page">
+                  <button class="hot__button blue-button">
+                    <img class="hot__button-img" src="img/hot/Images.svg" alt="Icon: image">
+                    Смотреть фото
+                    <span class="hot__button-number">26</span>
+                  </button>
+                </a>
+              </div>
+              <!--hot__block-title-->              
+            </div>
+            <!--hot-slider-->
           </div>
-          <a href="#" class="hot__link-title">
-            <h1 class="hot__title">Выбор читателей: где удобнее работать фрилансеру</h1>
-          </a>
-          <button class="hot__button">            
-              <img class="hot__button-img" src="img/hot/Images.svg" alt="Icon: image">
-              Смотреть фото
-              <span class="hot__button-number">26</span>            
-          </button>
+          <!--slide-4-->
+          <div class="swiper-slide">
+            <img src="img/hot/slider-5.jpg" alt="Slide" class="hot-slider__img">
+            <div class="hot-slider__block">
+              <div class="hot__block-title">
+                <div class="hot__label">Горячее</div>
+                <div class="hot__author">
+                  <a href="#" class="hot__link-ava">
+                    <img class="hot__ava" src="img/article/avatar-4.png" alt="ava image">
+                  </a>
+                  <a href="#" class="hot__link-name">
+                    <span class="hot__name">Мария Филатова</span>
+                  </a>
+                  <span class="hot__prof">Фрилансер</span>
+                </div>
+                <!--hot-author-->
+                <a href="#" class="hot__link-title">
+                  <h1 class="hot__title">Техника работы по помидоркам — это как?</h1>
+                </a>
+                <a href="article.html" class="article-page">
+                  <button class="hot__button blue-button">
+                    <img class="hot__button-img" src="img/hot/Images.svg" alt="Icon: image">
+                    Смотреть фото
+                    <span class="hot__button-number">26</span>
+                  </button>
+                </a>
+              </div>
+              <!--hot__block-title-->
+            </div>
+            <!--hot-slider-->
+          </div>
+          <!--slide-5-->
+          ...
         </div>
-      </div>
-
-
+        <!-- If we need pagination -->
+        <div class="swiper-pagination hot__pagination"></div>      
+        
+      </div> <!--swiper-container-->
 
       <div class="career">
         <img class="career__img" src="img/hot/man-circle.png" alt="Career image">
@@ -748,12 +892,12 @@
             <h1 class="career__title">Вопросы на собеседовании для джуна</h1>
           </a>
           <p class="career__text">Каверзные и не очень вопросы, которых боятся новички, когда идут на собеседование</p>
-        </div>
-        <button class="career__button">
+        </div>        
+        <a href="article.html" class="article-page">
+          <button class="career__button blue-button">
           Читать далее<img class="career__button-img" src="img/Arrow-btn.svg" alt="Icon: arrow">
-        </button>
+        </button></a>
       </div>
-
 
 
       <div class="article-5 article">
@@ -782,7 +926,7 @@
 </section>
 
 
-<footer class="footer">
+<footer class="footer" id="footer">
   <div class="container">
 
     <div class="subscribe">
@@ -792,7 +936,7 @@
           <input type="email" class="subscribe__input" placeholder="Email" name="email" required>
         </div>
         <div class="subscribe__wrapper-button">
-          <button class="subscribe__button">Подписаться</button>
+          <button class="subscribe__button blue-button">Подписаться</button>
         </div>
       </form>
     </div> <!-- subscribe-->
@@ -801,29 +945,29 @@
     <div class="footer__list-wrapper footer__red">
       <h3 class="footer__title">Новости</h3>
       <ul class="footer__list">
-        <li class="footer__item"><a href="#" class="footer__link-item">Обновления</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Экспресс</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Politics</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Solar Eclipse</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-red">Обновления</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-red">Экспресс</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-red">Politics</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-red">Solar Eclipse</a></li>
       </ul>
     </div>
     
     <div class="footer__list-wrapper footer__purple">
       <h3 class="footer__title">Статьи</h3>
       <ul class="footer__list">
-        <li class="footer__item"><a href="#" class="footer__link-item">HTML</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">CSS</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">JavaScript</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">JWeb Design</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-purple">HTML</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-purple">CSS</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-purple">JavaScript</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-purple">JWeb Design</a></li>
       </ul>
     </div>
     
     <div class="footer__list-wrapper footer__blue">
       <h3 class="footer__title">Видеоуроки</h3>
       <ul class="list">
-        <li class="footer__item"><a href="#" class="footer__link-item">Скринкасты</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Уроки</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Вебинары</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-blue">Скринкасты</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-blue">Уроки</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-blue">Вебинары</a></li>
       </ul>
     </div>
     
@@ -831,32 +975,32 @@
     <div class="footer__list-wrapper footer__orange">
       <h3 class="footer__title">Курсы</h3>
       <ul class="footer__list">
-        <li class="footer__item"><a href="#" class="footer__link-item">Платные интенсивы</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Бесплатные стримы</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Мастер-классы</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Менторство</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Буткемпы</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-orange">Платные интенсивы</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-orange">Бесплатные стримы</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-orange">Мастер-классы</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-orange">Менторство</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-orange">Буткемпы</a></li>
       </ul>
     </div>
     
     <div class="footer__list-wrapper footer__green">
       <h3 class="footer__title">Информация</h3>
       <ul class="footer__list">
-        <li class="footer__item"><a href="#" class="footer__link-item">Политика данных</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Оферта сайта</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Реквизиты</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Контакты</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-green">Политика данных</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-green">Оферта сайта</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-green">Реквизиты</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-green">Контакты</a></li>
       </ul>
     </div>
     
     <div class="footer__list-wrapper footer__greyblue">
       <h3 class="footer__title">Категории</h3>
       <ul class="footer__list">
-        <li class="footer__item"><a href="#" class="footer__link-item">Популярное</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Горячее</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Подборки</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Мнения</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Карьера</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-greyblue">Популярное</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-greyblue">Горячее</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-greyblue">Подборки</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-greyblue">Мнения</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-greyblue">Карьера</a></li>
       </ul>
     </div>
     
@@ -872,23 +1016,23 @@
       </div>
       <!-- /.contacts__wrapper-lincs -->
       <div class="contacts__wrapper-icons">
-        <div class="contacts__fb">
-          <a href="#" class="contacts__fb-link" target="_blank">
+        <div class="contacts__fb blue-button">
+          <a href="https://www.facebook.com/universalpictures/" class="contacts__fb-link" target="_blank">
             <img class="contacts__fb-img" src="img/Facebook.svg" alt="Icon: facebook">
           </a>
         </div>
-        <div class="contacts__tw">
-          <a href="#" class="contacts__tw-link" target="_blank">
+        <div class="contacts__tw blue-button">
+          <a href="https://twitter.com/universalorl" class="contacts__tw-link" target="_blank">
             <img class="contacts__tw-img" src="img/Twitter.svg" alt="Icon: tvitter">
           </a>
         </div>
-        <div class="contacts__yt">
-          <a href="#" class="contacts__yt-link" target="_blank">
+        <div class="contacts__yt blue-button">
+          <a href="https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw" class="contacts__yt-link" target="_blank">
             <img class="contacts__yt-img" src="img/YouTube.svg" alt="Icon: youtube">
           </a>
         </div>
-        <div class="contacts__inst">
-          <a href="#" class="contacts__inst-link" target="_blank">
+        <div class="contacts__inst blue-button">
+          <a href="https://www.instagram.com/universalpictures/?hl=ru" class="contacts__inst-link" target="_blank">
             <img class="contacts__inst-img" src="img/footer/Instagram.svg" alt="Icon: instagram">
           </a>
         </div>
@@ -910,7 +1054,11 @@
 </footer>
 
 
-
+<div class="to-top">
+  <a href="#header" class="to-top__link">
+    <img src="img/to-top.svg" alt="Icon: up" class="to-top__img">
+  </a>
+</div>
 
 
 
@@ -933,6 +1081,7 @@
 
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/main-slider.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

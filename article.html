@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <header class="header  header-light">
+  <header class="header  header-light" id="header">
     <div class="container">
       <div class="header-wrapper">
         <div class="header__logo-wrapper">
@@ -31,13 +31,13 @@
         
         <nav class="navbar-menu">
           <ul class="navbar-menu__list">
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">Статьи</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">Новости</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">Курсы</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">HTML</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">CSS</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">JavaScript</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link navbar-menu__link-light">Web Design</a></li>
+            <li class="navbar-menu__item"><a href="#more-article" class="navbar-menu__link navbar-menu__link-light">Статьи</a></li>
+            <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link navbar-menu__link-light">Новости</a></li>
+            <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link navbar-menu__link-light">Курсы</a></li>
+            <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link navbar-menu__link-light">HTML</a></li>
+            <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link navbar-menu__link-light">CSS</a></li>
+            <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link navbar-menu__link-light">JavaScript</a></li>
+            <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link navbar-menu__link-light">Web Design</a></li>
           </ul>
         </nav>
         <button class="header__button">Оставить заявку</button>
@@ -55,7 +55,7 @@
         <div class="hero__navigation">
           <div class="hero__main">
             <img src="img/article/Home.svg" alt="Icon: home" class="hero__link-main-img">
-            <a href="#" class="hero__link-main">На главную</a>
+            <a href="index.html" class="hero__link-main">На главную</a>
           </div> <!--hero__main-->
           <div class="hero__switch">
             <img src="img/article/left-arrow.svg" alt="Icon: left-arrow" class="hero__link-left-img">
@@ -163,11 +163,11 @@
       </div> <!--full-article__block-author-->
     </div> <!--full-article__wrapper container-hero-->
 
-    <section class="slider">
+    <div class="slider">
       <div class="slider-wrapper">
         <div class="container">
           <!-- Slider main container -->
-          <div class="swiper-container  article-slider  article__slider">
+          <div class="swiper-container  article-slider">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -183,11 +183,11 @@
             </div>
       
             <!-- If we need navigation buttons -->
-            <button class="article-slider__button article-slider__button--prev">
-              <img src="img/article/arrow-prev.svg" alt="Icon: arrow prev" class="article-slider__button--prev">
+            <button class="article-slider__button article-slider__button-prev">
+              <img src="img/article/arrow-prev.svg" alt="Icon: arrow prev" class="article-slider__button-prev">
             </button>
-            <button class="article-slider__button article-slider__button--next">
-              <img src="img/article/arrow-next.svg" alt="Icon: arrow next" class="article-slider__button--next">
+            <button class="article-slider__button article-slider__button-next">
+              <img src="img/article/arrow-next.svg" alt="Icon: arrow next" class="article-slider__button-next">
             </button>
           </div>
           <!--/.swiper-container-->
@@ -211,7 +211,7 @@
         </div>
       
       </div>
-    </section>
+    </div>
     
     <div class="full-article__wrapper container-hero">
       <div class="full-article__block-text">
@@ -259,17 +259,17 @@
         <div class="repost">
           <h2 class="repost__title">Поддержите репостом</h2>
           <div class="repost__wrapper-link">
-            <button class="repost__button">
+            <button class="repost__button blue-button">
               <img class="repost__img" src="img/Heart.svg" alt="Icon: heart">
               Like it
               <span class="repost__number repost__number-like">42</span>
             </button>
-            <button class="repost__button">
+            <button class="repost__button blue-button">
               <img class="repost__img" src="img/Facebook.svg" alt="Icon: facebook">
               Share
               <span class="repost__number repost__number-fb">80</span>
             </button>
-            <button class="repost__button">
+            <button class="repost__button blue-button">
               <img class="repost__img" src="img/Twitter.svg" alt="Icon: twitter">
               Tweet
               <span class="repost__number repost__number-tw">33</span>
@@ -314,7 +314,7 @@
   </div> <!--container-->
 </section> <!--full-article-->
 
-<div class="more-article">
+<div class="more-article" id="more-article">
   <div class="container">
     <div class="more-article-wrapper">
       <div class="more-article__card">
@@ -804,14 +804,14 @@
 <div class="add-comment" id="add-comment">
   <div class="container container-hero">
     <div class="add-comment-wrapper">
-      <img src="img/article/avatar-6.png" class="add-comment__author-img">
+      <img src="img/article/avatar-6.png" class="add-comment__author-img" alt="Avatar">
       <div class="add-comment__wrapper">
         <h2 class="add-comment__title">Что вы думаете на этот счет?</h2>
         <form class="add-comment__form" action="send.php" method="POST">
           <div class="add-comment__textarea-wrapper">
             <textarea class="add-comment__textarea" minlength="100" required></textarea>
           </div>
-          <button class="add-comment__button">
+          <button class="add-comment__button blue-button">
             Отправить
             <img src="img/article/right-arrow.svg" alt="IconL arrow" class="add-comment__arrow">
           </button>
@@ -823,7 +823,7 @@
   <!-- /.container container-hero -->  
 </div>
 
-<footer class="footer">
+<footer class="footer" id="footer">
  <div class="container">  
       <div class="subscribe">
         <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
@@ -832,7 +832,7 @@
             <input type="email" class="subscribe__input" placeholder="Email" name="email" required>
           </div>
           <div class="subscribe__wrapper-button">
-            <button class="subscribe__button">Подписаться</button>
+            <button class="subscribe__button blue-button">Подписаться</button>
           </div>
         </form>
       </div> <!-- subscribe-->
@@ -840,29 +840,29 @@
     <div class="footer__list-wrapper footer__red">
       <h3 class="footer__title">Новости</h3>
       <ul class="footer__list">
-        <li class="footer__item"><a href="#" class="footer__link-item">Обновления</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Экспресс</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Politics</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Solar Eclipse</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-red">Обновления</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-red">Экспресс</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-red">Politics</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-red">Solar Eclipse</a></li>
       </ul>
     </div>
     
     <div class="footer__list-wrapper footer__purple">
       <h3 class="footer__title">Статьи</h3>
       <ul class="footer__list">
-        <li class="footer__item"><a href="#" class="footer__link-item">HTML</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">CSS</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">JavaScript</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">JWeb Design</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-purple">HTML</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-purple">CSS</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-purple">JavaScript</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-purple">JWeb Design</a></li>
       </ul>
     </div>
     
     <div class="footer__list-wrapper footer__blue">
       <h3 class="footer__title">Видеоуроки</h3>
       <ul class="list">
-        <li class="footer__item"><a href="#" class="footer__link-item">Скринкасты</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Уроки</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Вебинары</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-blue">Скринкасты</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-blue">Уроки</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-blue">Вебинары</a></li>
       </ul>
     </div>
     
@@ -870,32 +870,32 @@
     <div class="footer__list-wrapper footer__orange">
       <h3 class="footer__title">Курсы</h3>
       <ul class="footer__list">
-        <li class="footer__item"><a href="#" class="footer__link-item">Платные интенсивы</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Бесплатные стримы</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Мастер-классы</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Менторство</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Буткемпы</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-orange">Платные интенсивы</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-orange">Бесплатные стримы</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-orange">Мастер-классы</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-orange">Менторство</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-orange">Буткемпы</a></li>
       </ul>
     </div>
     
     <div class="footer__list-wrapper footer__green">
       <h3 class="footer__title">Информация</h3>
       <ul class="footer__list">
-        <li class="footer__item"><a href="#" class="footer__link-item">Политика данных</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Оферта сайта</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Реквизиты</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Контакты</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-green">Политика данных</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-green">Оферта сайта</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-green">Реквизиты</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-green">Контакты</a></li>
       </ul>
     </div>
     
     <div class="footer__list-wrapper footer__greyblue">
       <h3 class="footer__title">Категории</h3>
       <ul class="footer__list">
-        <li class="footer__item"><a href="#" class="footer__link-item">Популярное</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Горячее</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Подборки</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Мнения</a></li>
-        <li class="footer__item"><a href="#" class="footer__link-item">Карьера</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-greyblue">Популярное</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-greyblue">Горячее</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-greyblue">Подборки</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-greyblue">Мнения</a></li>
+        <li class="footer__item"><a href="#" class="footer__link-item footer__link-item-greyblue">Карьера</a></li>
       </ul>
     </div>
     
@@ -911,23 +911,23 @@
       </div>
       <!-- /.contacts__wrapper-lincs -->
       <div class="contacts__wrapper-icons">
-        <div class="contacts__fb">
-          <a href="#" class="contacts__fb-link" target="_blank">
+        <div class="contacts__fb blue-button">
+          <a href="https://www.facebook.com/universalpictures/" class="contacts__fb-link" target="_blank">
             <img class="contacts__fb-img" src="img/Facebook.svg" alt="Icon: facebook">
           </a>
         </div>
-        <div class="contacts__tw">
-          <a href="#" class="contacts__tw-link" target="_blank">
+        <div class="contacts__tw blue-button">
+          <a href="https://twitter.com/universalorl" class="contacts__tw-link" target="_blank">
             <img class="contacts__tw-img" src="img/Twitter.svg" alt="Icon: tvitter">
           </a>
         </div>
-        <div class="contacts__yt">
-          <a href="#" class="contacts__yt-link" target="_blank">
+        <div class="contacts__yt blue-button">
+          <a href="https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw" class="contacts__yt-link" target="_blank">
             <img class="contacts__yt-img" src="img/YouTube.svg" alt="Icon: youtube">
           </a>
         </div>
-        <div class="contacts__inst">
-          <a href="#" class="contacts__inst-link" target="_blank">
+        <div class="contacts__inst  blue-button">
+          <a href="https://www.instagram.com/universalpictures/?hl=ru" class="contacts__inst-link" target="_blank">
             <img class="contacts__inst-img" src="img/footer/Instagram.svg" alt="Icon: instagram">
           </a>
         </div>
@@ -947,6 +947,12 @@
 
   </div> <!-- container-->
 </footer>
+
+<div class="to-top">
+  <a href="#header" class="to-top__link">
+    <img src="img/to-top.svg" alt="Icon: up" class="to-top__img">
+  </a>
+</div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
