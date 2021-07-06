@@ -16,6 +16,9 @@
     flex-direction: column
     justify-content: space-between
     padding: 55px 0 100px 55px
+    display: none
+    &--active
+      display: block
     &::after
       content: ''
       position: absolute
@@ -26,7 +29,7 @@
       bottom: 0
       left: 0
       background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
-      z-index: 5
+      z-index: -2
   &__bg-img
     position: absolute
     top: 0
@@ -43,6 +46,9 @@
   margin-bottom: 145px
   z-index: 8
   &__avatar
+    width: 45px
+    height: 45px
+    object-fit: cover
     border-radius: 50%
     margin-right: 10px
   &-text
@@ -63,12 +69,10 @@
       color: $light
       opacity: 0.4
 .title-block
-  /*min-height: 225px*/
   display: flex
   flex-direction: column
   justify-content: space-between
   align-items: start
-  z-index: 8
   &__js
     font-style: normal
     font-weight: 900
@@ -87,6 +91,9 @@
     font-size: 40px
     line-height: 50px
     color: $light
+    z-index: 8
+    &:hover
+      color: #FFA34D
   &__button
     min-width: 154px
     padding: 10px 20px
@@ -118,13 +125,15 @@
     text-transform: uppercase
     color: #262D33
   &__block
-    min-height: 99px
+    min-height: 102px
     padding: 18px 25px
     display: flex
     flex-direction: column
     border-bottom: 1px solid #D9DADB
     &:last-child
       border: none
+    &--active
+      background-color: #F5F5F5
   &__link
     margin-bottom: 8px
     letter-spacing: 0.5px

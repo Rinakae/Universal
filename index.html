@@ -42,10 +42,10 @@
     <div class="container">
       
       <div class="main-article-wrapper">
-        <div class="main-article__text">
+        <div class="main-article__text main-article__text--active" id="tab-1">
           <img src="img/bg-img-1.jpg" alt="Developer at the computer" class="main-article__bg-img">
           <div class="author">
-            <img src="img/david-gurov.jpg" alt="Давид Гуров" class="author__avatar">
+            <img src="img/david-gurov.jpg" alt="Avatar" class="author__avatar">
             <div class="author-text">
               <span class="author-text__name">Давид Гуров</span>
               <span class="author-text__prof">Разработчик</span>
@@ -53,45 +53,123 @@
           </div> <!-- /.author-->
           <div class="title-block">
             <a href="#" class="title-block__js">Java Script</a>
-            <h1 class="title-block__title">Расширение Chrome <br> защищает от атак</h1>
+            <a href="#" class="title-block__link">
+              <h1 class="title-block__title">Расширение Chrome <br> защищает от атак</h1>
+            </a>
             <a href="article.html" class="article-page"><button class="title-block__button blue-button">Читать далее<img src="img/Arrow-btn.svg" alt="arrow"
                 class="title-block__arrow"></button></a>
           </div>
-        </div> <!-- /.main-article__text-->     
+        </div> <!-- /.main-article__text tab-1-->   
+        
+        <div class="main-article__text" id="tab-2">
+          <img src="img/hot/slider-1.jpg" alt="Developer at the computer" class="main-article__bg-img">
+          <div class="author">
+            <img src="img/article/avatar-4.png" alt="Avatar" class="author__avatar">
+            <div class="author-text">
+              <span class="author-text__name">Дарья Кузнецова</span>
+              <span class="author-text__prof">Фрилансер</span>
+            </div>
+          </div> <!-- /.author-->
+          <div class="title-block">
+            <a href="#" class="title-block__js">JavaScript</a>
+            <a href="#" class="title-block__link">
+              <h1 class="title-block__title">На каком стандарте писать <br> скрипты, если я фрилансер</h1>
+            </a>
+            <a href="article.html" class="article-page"><button class="title-block__button blue-button">Читать далее<img
+                  src="img/Arrow-btn.svg" alt="arrow" class="title-block__arrow"></button></a>
+          </div>
+        </div> <!-- /.main-article__text tab-2-->
+
+        <div class="main-article__text" id="tab-3">
+          <img src="img/hot/slider-2.jpg" alt="Developer at the computer" class="main-article__bg-img">
+          <div class="author">
+            <img src="img/article/avatar-5.png" alt="Avatar" class="author__avatar">
+            <div class="author-text">
+              <span class="author-text__name">Максим  Урбан</span>
+              <span class="author-text__prof">Фрилансер</span>
+            </div>
+          </div> <!-- /.author-->
+          <div class="title-block">
+            <a href="#" class="title-block__js">HTML</a>
+            <a href="#" class="title-block__link">
+              <h1 class="title-block__title">Правильно вставляем картинку <br> на сайт для Retina дисплея</h1>
+            </a>
+            <a href="article.html" class="article-page"><button class="title-block__button blue-button">Читать далее<img
+                  src="img/Arrow-btn.svg" alt="arrow" class="title-block__arrow"></button></a>
+          </div>
+        </div> <!-- /.main-article__text tab-3-->
+
+        <div class="main-article__text" id="tab-4">
+          <img src="img/hot/slider-4.jpg" alt="Developer at the computer" class="main-article__bg-img">
+          <div class="author">
+            <img src="img/article/avatar-6.png" alt="Avatar" class="author__avatar">
+            <div class="author-text">
+              <span class="author-text__name">Иванка Ткачева</span>
+              <span class="author-text__prof">Веб-дизайнер</span>
+            </div>
+          </div> <!-- /.author-->
+          <div class="title-block">
+            <a href="#" class="title-block__js">Web designL</a>
+            <a href="#" class="title-block__link">
+              <h1 class="title-block__title">ТОП-10 плагинов для Figma</h1>
+            </a>
+            <a href="article.html" class="article-page"><button class="title-block__button blue-button">Читать далее<img
+                  src="img/Arrow-btn.svg" alt="arrow" class="title-block__arrow"></button></a>
+          </div>
+        </div> <!-- /.main-article__text tab-4-->
+
+        <div class="main-article__text" id="tab-5">
+          <img src="img/hot/slider-5.jpg" alt="Developer at the computer" class="main-article__bg-img">
+          <div class="author">
+            <img src="img/article/avatar-3.png" alt="Avatar" class="author__avatar">
+            <div class="author-text">
+              <span class="author-text__name">Олег Ткачева</span>
+              <span class="author-text__prof">Веб-дизайнер</span>
+            </div>
+          </div> <!-- /.author-->
+          <div class="title-block">
+            <a href="#" class="title-block__js">CSS</a>
+            <a href="#" class="title-block__link">
+              <h1 class="title-block__title">Возможности CSS Grid Layout, <br> которые уже можно применять</h1>
+            </a>
+            <a href="article.html" class="article-page"><button class="title-block__button blue-button">Читать далее<img
+                  src="img/Arrow-btn.svg" alt="arrow" class="title-block__arrow"></button></a>
+          </div>
+        </div> <!-- /.main-article__text tab-5-->
         
         <div class="recom">
           <div class="recom-title-block">
             <h2 class="recom-title">Рекомендуем</h2>
           </div>
-          <div class="recom__block">
+          <div class="recom__block recom__block--active" data-target="#tab-1">
             <a href="#" class="recom__link lightblue">css</a>
             <a href="#" class="recom__p-link"> 
               Как использовать CSS float <br> после того, как вышел Flexbox
             </a>
           </div> <!-- /.recom__block-->
 
-          <div class="recom__block">
+          <div class="recom__block" data-target="#tab-2">
             <a href="#" class="recom__link greyblue">Java script</a>
             <a href="#" class="recom__p-link">
               На каком стандарте писать <br> скрипты, если я фрилансер
             </a>
           </div> <!-- /.recom__block-->
 
-          <div class="recom__block">
+          <div class="recom__block" data-target="#tab-3">
             <a href="#" class="recom__link purple">html</a>
             <a href="#" class="recom__p-link">
               Правильно вставляем картинку <br> на сайт для Retina дисплея
             </a>
           </div> <!-- /.recom__block-->
 
-          <div class="recom__block">
+          <div class="recom__block" data-target="#tab-4">
             <a href="#" class="recom__link orange">web design</a>
             <a href="#" class="recom__p-link">
               ТОП-10 плагинов для Figma
             </a>
           </div> <!-- /.recom__block-->
 
-          <div class="recom__block">
+          <div class="recom__block" data-target="#tab-5">
             <a href="#" class="recom__link green">css</a>
             <a href="#" class="recom__p-link">
               Возможности CSS Grid Layout, <br> которые уже можно применять
@@ -931,7 +1009,7 @@
 
     <div class="subscribe">
       <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
-      <form action="send.php" method="POST" class="subscribe__form">
+      <form action="send.php" method="POST" class="subscribe__form form">
         <div class="subscribe__wrapper">
           <input type="email" class="subscribe__input" placeholder="Email" name="email" required>
         </div>
@@ -1067,12 +1145,12 @@
       <a href="#" class="modal__close"><img src="img/close.svg" alt="icon: close" class="modal__close-img"></a>
       <h2 class="modal__title">Оставить заявку</h2>
       <form action="send.php" method="POST" class="modal__form form">
-        <input type="text" class="modal__input modal__placeholder" placeholder="Your Full Name*" name="name" required
+        <input type="text" class="modal__input modal__placeholder" placeholder="Имя*" name="name" required
           minlength="2">
-        <input type="tel" class="modal__input modal__placeholder phone" placeholder="Phone Number*" name="phone"
+        <input type="tel" class="modal__input modal__placeholder phone" placeholder="Телефон*" name="phone"
           required minlength="18">
         <input type="email" class="modal__input modal__placeholder" placeholder="Email*" name="email" required>
-        <textarea cols="30" rows="10" class="modal__textarea modal__placeholder" placeholder="Message"
+        <textarea cols="30" rows="10" class="modal__textarea modal__placeholder" placeholder="Сообщение"
           name="message"></textarea>
         <div class="modal__button-block">
           <button class="button modal__button blue-button">
@@ -1104,6 +1182,8 @@
 
 
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/main-slider.js"></script>
 <script src="js/main.js"></script>

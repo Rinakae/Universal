@@ -807,9 +807,9 @@
       <img src="img/article/avatar-6.png" class="add-comment__author-img" alt="Avatar">
       <div class="add-comment__wrapper">
         <h2 class="add-comment__title">Что вы думаете на этот счет?</h2>
-        <form class="add-comment__form" action="send.php" method="POST">
+        <form class="add-comment__form form" action="send.php" method="POST">
           <div class="add-comment__textarea-wrapper">
-            <textarea class="add-comment__textarea" minlength="100" required></textarea>
+            <textarea class="add-comment__textarea" minlength="100" name="comment" required></textarea>
           </div>
           <button class="add-comment__button blue-button">
             Отправить
@@ -827,7 +827,7 @@
  <div class="container">  
       <div class="subscribe">
         <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
-        <form action="send.php" method="POST" class="subscribe__form">
+        <form action="send.php" method="POST" class="subscribe__form form">
           <div class="subscribe__wrapper">
             <input type="email" class="subscribe__input" placeholder="Email" name="email" required>
           </div>
@@ -981,6 +981,8 @@
 <!--modal-->
 
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/articleSlider.js"></script>
     <script src="js/main.js"></script>
