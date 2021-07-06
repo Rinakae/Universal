@@ -51,7 +51,7 @@ $(document).ready(function() {
   // обработка форм
   $('.form').each(function() {
     $(this).validate({
-    errorClass: "invalid",
+    errorClass: "invalid",    
     messages: {
       name: {
         required: "Пожалуйста, введите свое имя",
@@ -71,8 +71,8 @@ $(document).ready(function() {
         minlength: "Минимальное количество символово - 100",
       },
     }
-  })
-  })
+  });
+  });
 
   $('.phone').each(function(){
 $(this).mask('+7 (999) 999-99-99');
