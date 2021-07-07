@@ -6,9 +6,9 @@ $(document).ready(function () {
       enabled: true,
       onlyInViewport: false,
     },
-     autoplay: {
-     delay: 3500,
-    },
+    autoplay: {
+    delay: 3500,
+  },
 
     // If we need pagination
   pagination: {

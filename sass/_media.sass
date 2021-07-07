@@ -270,6 +270,14 @@
     grid-column: 2 / 3
   .investigation
     height: 320px
+    &-wrapper
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: center
+    &__title
+      font-size: 36px
+      line-height: 40px
   .container
     &-wrapper
       flex-direction: column
@@ -280,7 +288,7 @@
       margin-bottom: 30px
     &-block
       &__bookmark
-        top: 317px
+        top: 3px
   .recently
     max-width: 100%
     &__card
@@ -303,10 +311,221 @@
     &__img
       width: 292px
       opacity: 1
+    &__block
+      &-1
+        padding-left: 15px
+      &-2
+        padding: 13px 15px
+  .popular
+    &__button
+      margin-bottom: 10px
+  .tags
+    &-2
+      justify-content: start
+    &-link
+      margin-right: 10px
+      margin-bottom: 5px
+  .download-1
+    padding: 25px 15px 25px 15px
+  .sotial
+    padding-bottom: 30px
+  .footer
+    &__links
+      flex-wrap: wrap
+    &__list
+      &-wrapper
+        padding-top: 10px
+        padding-bottom: 25px
+        &:last-child
+          width: 195px
+  .contacts
+    flex-wrap: wrap
+    justify-content: center
+  .navbar
+    &-menu
+      display: none
 /* -----------------------------ширина 576-----------------------------------------*/
-@media (max-width: 576px)
-
+@media (max-width: 567px)
+  .title
+    &-block
+      &__title
+        font-size: 24px
+        line-height: 26px
+  .topic
+    &-grid
+      grid-gap: 10px
+  .articles
+    &__img
+      opacity: 0.5
+  .tags
+    &-link
+      padding: 3px 10px
+      margin-bottom: 5px
+  .hot
+    padding: 40px 0
+    &-slider
+      height: 320px
+    &__block
+      &-title
+        margin-bottom: 0
+    &__title
+      margin-top: 5px
+      margin-bottom: 10px
+      font-size: 24px
+      line-height: 26px
+  .swiper-pagination
+    margin-bottom: 10px
+  .career
+    min-height: 320px
+    padding: 25px
+  .footer
+    padding: 40px 0
+    &__links
+      padding-bottom: 20px
+  .subscribe
+    padding-bottom: 45px
+    &__input
+      max-width: 270px
+  .contacts
+    &__link
+      font-size: 11px
+  .copyright
+    padding-top: 20px
+    flex-direction: column
+    &__text
+      margin-bottom: 10px
       /* ширина ----------------------480-320-----------------------------------*/
 @media (min-width: 320px) and (max-width: 480px)
   .container
-    width: 89%
+    width: 90%
+  .header
+    &__button
+      margin-top: 10px
+      min-width: 100%
+  .main
+    &-article
+      top: 120px
+  .panel
+    &-article
+      &__wrapper
+        flex-direction: column
+        flex-wrap: nowrap
+        justify-content: space-between
+        padding: 20px
+      &__card
+        margin-bottom: 15px
+        border-bottom: 1px solid #4B5157
+        padding: 10px 0
+        &:last-child
+          margin-bottom: 0
+          border: none
+  .investigation
+    &__title
+      font-size: 24px
+      line-height: 26px
+    &-wrapper
+      padding: 20px 15px
+  .career
+    &__block
+      &-text
+        width: 100%
+  .hot
+    &-block
+      &__title
+        padding: 10px
+        position: relative
+    &__label
+      position: absolute
+      top: 10px
+      left: 10px
+    &-grid
+      grid-template-rows: 1fr repeat(3, minmax(170px, min-content))
+      grid-template-columns: 1fr
+      grid-gap: 10px
+    &-slider
+      grid-row: 1 / 2
+      grid-column: 1 / 2
+  .career
+    grid-row: 2 / 3
+    grid-column: 1 / 2
+  .article-5
+    grid-row: 3 / 4
+    grid-column: 1 / 2
+  .article-6
+    grid-row: 4 / 5
+    grid-column: 1 / 2
+  .article
+    padding: 25px
+    &__title
+      font-size: 16px
+      line-height: 25px
+    &__text
+      font-size: 14px
+      line-height: 20px
+  .subscribe
+    &__title
+      font-size: 26px
+      line-height: 28px
+    &__form
+      flex-direction: column
+      align-items: center
+    &__wrapper
+      margin-bottom: 10px
+  .contacts
+    justify-content: start
+    &__wrapper
+      &-lincs
+        flex-direction: column
+        align-items: flex-start
+        margin-bottom: 10px
+    &__link
+      font-size: 14px
+      line-height: 20px
+      margin: 10px 0
+  .modal
+    &__button
+      margin-bottom: 10px
+      &-block
+        flex-direction: column
+  .topic
+    &-grid
+      grid-template-rows: repeat(10, minmax(170px, min-content))
+      grid-template-columns: 1fr
+  .articles
+    grid-row: 1 / 2
+    grid-column: 1 / 2
+  .popular
+    grid-row: 2 / 3
+    grid-column: 1 / 2
+  .download
+    grid-row: 3 / 4
+    grid-column: 1 / 2
+  .advice
+    grid-row: 4 / 5
+    grid-column: 1 / 2
+  .article-1
+    grid-row: 5 / 6
+    grid-column: 1 / 2
+  .article-2
+    grid-row: 6 / 7
+    grid-column: 1 / 2
+  .tags
+    grid-row: 7 / 8
+    grid-column: 1 / 2
+  .article-3
+    grid-row: 8 / 9
+    grid-column: 1 / 2
+  .article-4
+    grid-row: 9 / 10
+    grid-column: 1 / 2
+  .sotial
+    grid-row: 10 / 11
+    grid-column: 1 / 2
+  .articles
+    &__block
+      &-2
+        flex-direction: column
+        align-items: flex-start
+        &-wrapper
+          flex-wrap: wrap
+          margin-bottom: 5px
