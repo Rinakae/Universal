@@ -1,0 +1,312 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .navbar
+    &-menu
+      &__list
+        min-width: 470px
+  .main
+    &-article
+      &__text
+        padding-bottom: 80px
+  .panel
+    &-article
+      &__wrapper
+        padding-top: 25px
+        padding-bottom: 30px
+      &__card
+        padding: 0 20px
+      &__link
+        font-size: 12px
+      &__img
+        width: 60px
+  .topic
+    padding-bottom: 50px
+  .articles
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &__block
+      &-1
+        position: relative
+        height: 100%
+    &__wrapper
+      &-text
+        padding-right: 25px
+        z-index: 3
+    &__img
+      position: absolute
+      right: 0
+      bottom: 0
+      width: 100%
+      z-index: 1
+      opacity: 0.5
+    &__link
+      &-name, &-author-text
+        line-height: 14px
+  .popular
+    padding: 19px 15px 25px 15px
+    &-block
+      flex-wrap: wrap
+    &__date
+      flex-basis: 100%
+      margin-bottom: 4px
+  .download
+    &-1
+      padding: 10px 15px 10px 15px
+  .advice
+    &__wrapper
+      &-text
+        border-left: 15px
+        padding-right: 15px
+  .article
+    padding: 15px
+    &__title
+      font-size: 14px
+      line-height: 20px
+    &__text
+      font-size: 13px
+      line-height: 19px
+  .tags
+    &-1
+      padding: 20px 15px
+    &-2
+      padding: 15px
+      justify-content: space-between
+    &-link
+      padding: 3px 15px
+      margin-right: 0
+  .sotial
+    padding-left: 15px
+    padding-right: 15px
+    &__link
+      &-block
+        &-tw
+          margin: 0 8px
+  .news
+    padding: 50px 0
+    &-block
+      &__img
+        margin-right: 15px
+        width: 300px
+      &__title
+        margin-top: 5px
+      &__p
+        margin-bottom: 5px
+/*---------------------------ширина 992---------------------------------*/
+@media (max-width: 992px)
+  .container
+    max-width: 700px
+  .header
+    &-wrapper
+      flex-wrap: wrap
+  .navbar
+    &-menu
+      flex-basis: 100%
+      order: 3
+      padding-top: 10px
+  .panel
+    &-article
+      &__wrapper
+        padding-top: 20px
+        padding-bottom: 20px
+      &__card
+        padding: 0 10px
+  .topic-grid
+    grid-template-rows: repeat(5, 170px)
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 20px
+  .articles
+    grid-row: 1 / 3
+    grid-column: 1 / 3
+  .popular
+    grid-row: 1 / 3
+    grid-column: 3 / 4
+  .download
+    grid-row: 3 / 4
+    grid-column: 3 / 4
+  .advice
+    grid-row: 3 / 5
+    grid-column: 1 / 2
+  .article-1
+    grid-row: 5 / 6
+    grid-column: 1 / 2
+  .article-2
+    grid-row: 5 / 6
+    grid-column: 2 / 3
+  .article-3
+    grid-row: 5 / 6
+    grid-column: 3 / 4
+  .article-4
+    display: none
+  .tags
+    grid-row: 3 / 5
+    grid-column: 2 / 3
+  .sotial
+    grid-row: 4 / 5
+    grid-column: 3 / 4
+  .investigation
+    &-wrapper
+      padding: 20px 0
+  .news
+    &-wrapper
+      max-width: 450px
+    &-block
+      flex-direction: column
+      &__img
+        width: 100%
+        height: 100%
+        margin-bottom: 10px
+        margin-right: 0
+      &__text
+        &-wrapper
+          width: 100%
+          min-height: 165px
+      &__bookmark
+        top: 269px
+  .recently
+    &-top
+      padding: 20px 15px
+    &-middle
+      padding: 0 15px
+    &__img
+      display: none
+  .hot
+    &-grid
+      grid-template-rows: 1fr minmax(170px, min-content)
+      grid-template-columns: 1fr 1fr
+      grid-gap: 20px
+    &-slider
+      grid-row: 1 / 2
+      grid-column: 1 / 3
+  .career
+    grid-row: 2 / 3
+    grid-column: 1 / 3
+  .article-5
+    grid-row: 3 / 4
+    grid-column: 1 / 2
+  .article-6
+    grid-row: 3 / 4
+    grid-column: 2 / 3
+  .contacts
+    &__logo
+      &-link
+        margin-right: 10px
+    &__link
+      margin-right: 15px
+      font-size: 13px
+
+        /*----------------------ширина 767-----------------------------------*/
+@media (max-width: 767px)
+  .container
+    max-width: 576px
+    width: 92%
+  .header
+    &__background
+      height: 815px
+  .main-article
+    &-wrapper
+      flex-direction: column
+    &__text
+      width: 100%
+      padding: 30px
+  .author
+    margin-bottom: 10px
+  .title
+    &-block
+      &__title
+        margin-bottom: 35px
+  .recom
+    &-title
+      &-block
+        padding: 10px 25px
+    &__block
+      min-height: 80px
+      max-height: 102px
+      padding: 10px 25px
+  .panel
+    &-article
+      padding-top: 30px
+      &__wrapper
+        flex-wrap: wrap
+        justify-content: center
+        min-height: 190px
+      &__card
+        padding: 0 8px
+        border: none
+  .topic-grid
+    grid-template-rows: repeat(2, 170px)
+    grid-template-columns: 1fr 1fr
+  .articles
+    grid-row: 1 / 3
+    grid-column: 1 / 3
+  .popular
+    grid-row: 3 / 5
+    grid-column: 1 / 2
+  .download
+    grid-row: 5 / 6
+    grid-column: 2 / 3
+  .advice
+    grid-row: 5 / 7
+    grid-column: 1 / 2
+  .article-1
+    grid-row: 7 / 8
+    grid-column: 1 / 2
+  .article-2
+    grid-row: 7 / 8
+    grid-column: 2 / 3
+  .article-3
+    grid-row: 8 / 9
+    grid-column: 1 / 2
+  .article-4
+    display: block
+    grid-row: 8 / 9
+    grid-column: 2 / 3
+  .tags
+    grid-row: 3 / 5
+    grid-column: 2 / 3
+  .sotial
+    grid-row: 6 / 7
+    grid-column: 2 / 3
+  .investigation
+    height: 320px
+  .container
+    &-wrapper
+      flex-direction: column
+  .news
+    &-wrapper
+      max-width: 100%
+      margin-right: 0
+      margin-bottom: 30px
+    &-block
+      &__bookmark
+        top: 317px
+  .recently
+    max-width: 100%
+    &__card
+      justify-content: start
+    &__img
+      display: block
+    &-top
+      padding: 20px 25px
+    &-middle
+      padding: 0 25px
+  .hot
+    &__block
+      &-title
+        margin-bottom: 74px
+  .articles
+    &__wrapper
+      &-text
+        max-width: 220px
+        padding-right: 0
+    &__img
+      width: 292px
+      opacity: 1
+/* -----------------------------ширина 576-----------------------------------------*/
+@media (max-width: 576px)
+
+      /* ширина ----------------------480-320-----------------------------------*/
+@media (min-width: 320px) and (max-width: 480px)
+  .container
+    width: 89%

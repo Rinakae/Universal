@@ -88,5 +88,9 @@ tabsItem.on('click', function (event) {
   $(this).addClass("recom__block--active");
 });
 
+var menuButton = document.querySelector(".menu-button");
+  menuButton.addEventListener("click", function () {
+  document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom__visible");
+  });
 
 });
