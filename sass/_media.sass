@@ -384,6 +384,10 @@
   .header
     &__background
       height: 815px
+    &__button
+      &-menu
+        display: flex
+
   .main-article
     &-wrapper
       flex-direction: column
@@ -397,6 +401,7 @@
       &__title
         margin-bottom: 35px
   .recom
+    max-width: 100%
     &-title
       &-block
         padding: 10px 25px
@@ -524,6 +529,9 @@
   .navbar
     &-menu
       display: none
+  .mobile-menu
+    &__visible
+      display: block
   .article
     &-slider
       height: 300px
@@ -628,6 +636,9 @@
           height: 60px
 /* -----------------------------ширина 576-----------------------------------------*/
 @media (max-width: 567px)
+  .header
+    &__button
+      min-width: 215px
   .title
     &-block
       &__title
@@ -721,6 +732,9 @@
     &__button
       margin-top: 10px
       min-width: 100%
+      order: 3
+  .mobile-menu
+    top: 122px
   .main
     &-article
       top: 120px
