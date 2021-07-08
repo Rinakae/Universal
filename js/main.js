@@ -49,30 +49,48 @@ $(document).ready(function() {
   }
 
   // обработка форм
-  $('.form').each(function() {
+  $('.form').each(function () {
     $(this).validate({
-    errorClass: "invalid",    
-    messages: {
-      name: {
-        required: "Пожалуйста, введите свое имя",
-        minlength: "Имя должно быть не короче двух букв",
+      errorClass: 'invalid',
+      ignore: [],
+      rules: {
+        select: {
+          required: true,
+        },
+        email: {
+          required: true,
+          email: true,
+        },
+        comment: {
+          required: true,
+          minlength: 100,
+        },
+        box: {
+          onecheck: true,
+        },
       },
-      email: {
-        required: "Введите адрес эл. почты",
-        email: "Ваш emeil должен содержать name@domain.com",
+      messages: {
+        select: {
+          required: 'Выберите тему письма',
+        },
+        email: {
+          required: 'Пожалуйста, введите Ваш Email',
+          email: 'Формат почты должен быть name@domain.com',
+        },
+        message: {
+          required: 'Пожалуйста, напишите сообщение',
+        },
+        comment: {
+          required: 'Оставьте свой комментарий',
+          minlength: 'Количество символов не менее 100',
+        },
+        box: {
+          required: 'Необходимо ваше согласие',
+        },
       },
-      phone: {
-        required: "Пожалуйста, оставьте свой номер телефона",
-        minlength: "Номер должен состоять из 10 цифр",
-      },
+    });
+  });
 
-      comment: {
-        required: "Пожалуйста, оставьте комментарий",
-        minlength: "Минимальное количество символово - 100",
-      },
-    }
-  });
-  });
 
   $('.phone').each(function(){
 $(this).mask('+7 (999) 999-99-99');

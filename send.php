@@ -5,22 +5,22 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$name = $_POST['name'];
-$phone = $_POST['phone'];
+$select = $_POST['select'];
 $message = $_POST['message'];
 $email = $_POST['email'];
+$checkbox = $_POST['checkbox'];
 $comment = $_POST['comment'];
 
 
 // Формирование самого письма
 $title = "Новая заявка";
 $body = "
-<h2>Новая заявка</h2>
-<b>Имя:</b> $name<br>
-<b>email:</b> $email<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Комментарий:</b> $comment<br><br>
-<b>Сообщение:</b><br>$message
+<h2>Обращение</h2>
+<b>Тема письма:</b> $select<br>
+<b>Сообщение:</b> $message<br><br>
+<b>Адрес почты:</b> $email<br><br>
+<b>Согласен с обработкой данных:</b> $checkbox<br><br>
+<b>Комментарий:</b><br>$comment
 ";
 
 

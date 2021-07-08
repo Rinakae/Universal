@@ -966,22 +966,34 @@
 <div class="modal">
   <div class="modal__overlay">
     <div class="modal__dialog">
-      <a href="#" class="modal__close"><img src="img/close.svg" alt="icon: close" class="modal__close-img"></a>
-      <h2 class="modal__title">Оставить заявку</h2>
+      <a href="#" class="modal__close"><img src="img/X.svg" alt="icon: close" class="modal__close-img"></a>
+      <h2 class="modal__title">Обратная связь</h2>
       <form action="send.php" method="POST" class="modal__form form">
-        <input type="text" class="modal__input modal__placeholder" placeholder="Имя*" name="name" required
-          minlength="2">
-        <input type="tel" class="modal__input modal__placeholder phone" placeholder="Телефон*" name="phone"
-          required minlength="18">
-        <input type="email" class="modal__input modal__placeholder" placeholder="Email*" name="email" required>
-        <textarea cols="30" rows="10" class="modal__textarea modal__placeholder" placeholder="Сообщение"
-          name="message"></textarea>
+        <div class="modal__wrapper-select">
+          <label for="theme" class="modal__label-select">Тема</label>
+          <select id="theme" class="modal__form-select" required name="select">
+            <option value="" hidden>Выберите тему</option>
+            <option value="Заявка">Оставить заявку</option>
+            <option value="Предложение">Предложения</option>
+            <option value="Сотрудничество">Сотрудничество</option>
+          </select>
+        </div>
+        <div class="modal__wrapper-message">
+          <label for="message" class="modal__label-message">Сообщение</label>
+          <textarea class="modal__form-message" id="message" name="message" required></textarea>
+        </div>
+        <div class="modal__wrapper-email">
+          <label for="email" class="modal__label-email">Email</label>
+          <input type="email" class="input modal__form-email" id="email" name="email" required autocomplete="off" />
+        </div>
+        <div class="checkbox modal__wrapper-checkbox">
+          <input id="check" type="checkbox" class="modal__form-checkbox" name="box" required />
+          <label for="check" class="checkbox-label modal__form-text">Согласен с обработкой данных</label>
+        </div>
         <div class="modal__button-block">
           <button class="button modal__button blue-button">
             Отправить
-            <img src="img/Arrow-btn.svg" alt="arrow" class="modal__arrow">
           </button>
-          <span class="modal__info">*Обязательные поля</span>
         </div>
       </form>
     </div>
